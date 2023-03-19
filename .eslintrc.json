@@ -1,4 +1,3 @@
 {
-	"extends": "next/core-web-vitals",
-	"quotes": ["error", "single"]
+	"extends": "next/core-web-vitals"
 }

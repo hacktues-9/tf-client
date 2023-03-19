@@ -24,6 +24,7 @@ module.exports = {
 			white: '#FFFFFF',
 			black: '#141420',
 			'bg-color': '#2C2C39',
+			border: '#3D3D4D',
 			stroke: '#4D4C5A',
 			dark: '#1D2144',
 			primary: '#5142FC',
