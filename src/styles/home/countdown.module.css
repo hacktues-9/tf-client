@@ -163,3 +163,18 @@ ul.countdown .label {
 		font-size: 1rem;
 	}
 }
+
+
+@media screen and (max-width: 395px) {
+	ul.countdown {
+		display: grid;
+		/* 2x2 */
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 16px;
+	}
+
+	ul.countdown li {
+		width: 100%;
+	}
+}
