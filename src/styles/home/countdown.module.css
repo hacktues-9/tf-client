@@ -106,13 +106,17 @@ ul.countdown {
 	/* overflow: hidden; */
 	font-weight: bolder;
 	color: #ffffffd0;
-	
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 ul.countdown li {
+	width: 8rem;
+	height: 8rem;
+	aspect-ratio: 1/1 !important;
+
 	margin: 0 0;
 	padding: 0;
 	display: inline-block;
@@ -121,6 +125,10 @@ ul.countdown li {
 	text-align: center;
 	font-weight: bolder;
 	color: #c4c4c4;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 ul.countdown .label {
@@ -137,6 +145,9 @@ ul.countdown .label {
 
 	ul.countdown li {
 		font-size: 3.5rem;
+		width: 7rem;
+		height: 7rem;
+		aspect-ratio: 1/1 !important;
 	}
 }
 
@@ -147,6 +158,9 @@ ul.countdown .label {
 
 	ul.countdown li {
 		font-size: 3rem;
+		width: 6.5rem;
+		height: 6.5rem;
+		aspect-ratio: 1/1 !important;
 	}
 }
 
@@ -157,6 +171,9 @@ ul.countdown .label {
 
 	ul.countdown li {
 		font-size: 2.5rem;
+		width: 6rem;
+		height: 6rem;
+		aspect-ratio: 1/1 !important;
 	}
 
 	ul.countdown .label {
@@ -164,8 +181,7 @@ ul.countdown .label {
 	}
 }
 
-
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 410px) {
 	ul.countdown {
 		display: grid;
 		/* 2x2 */
