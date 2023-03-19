@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
+const path = require('node:path');
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-}
+	reactStrictMode: true,
+	swcMinify: true,
+	optimizeFonts: false,
+	experimental: {
+		appDir: true,
+	},
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
