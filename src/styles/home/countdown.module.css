@@ -145,8 +145,8 @@ ul.countdown .label {
 
 	ul.countdown li {
 		font-size: 3.5rem;
-		width: 7rem;
-		height: 7rem;
+		width: 6.5rem;
+		height: 6.5rem;
 		aspect-ratio: 1/1 !important;
 	}
 }
@@ -158,8 +158,8 @@ ul.countdown .label {
 
 	ul.countdown li {
 		font-size: 3rem;
-		width: 6.5rem;
-		height: 6.5rem;
+		width: 6rem;
+		height: 6rem;
 		aspect-ratio: 1/1 !important;
 	}
 }
@@ -171,8 +171,8 @@ ul.countdown .label {
 
 	ul.countdown li {
 		font-size: 2.5rem;
-		width: 6rem;
-		height: 6rem;
+		width: 5.5rem;
+		height: 5.5rem;
 		aspect-ratio: 1/1 !important;
 	}
 
