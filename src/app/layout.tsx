@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 import './globals.css';
 import 'animate.css';
+import Footer from '@/partials/layout/Footer';
 
 export const metadata = {
 	title: 'TUES Fest 2023',
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		<html lang="bg">
 			<body className="bg-black">
 				{children}
+				<Footer />
 				<Analytics />
 			</body>
 		</html>
