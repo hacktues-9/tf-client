@@ -3,7 +3,6 @@ import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 import 'animate.css';
 import Footer from '@/partials/layout/Footer';
-import Navigation from '@/partials/layout/Navigation';
 
 export const metadata = {
 	title: {
