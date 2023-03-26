@@ -4,6 +4,11 @@
 	src: url('/fonts/warzone97.ttf');
 }
 
+@font-face {
+	font-family: OriginTechDemoRegular, 'Origin Tech Demo';
+	src: url('/fonts/origintech.ttf');
+}
+
 /* import Zone99 from ttf */
 
 @tailwind base;
