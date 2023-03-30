@@ -4,7 +4,7 @@
     <style>
       @font-face {
           font-family: OriginTechDemoRegular, 'Origin Tech Demo';
-          src: url(/fonts/origintech.ttf);
+          src: url('https://tuesfest.bg/fonts/origintech.otf') format('opentype');
       }
       .cls-1 {
         fill: #a47bf5;
