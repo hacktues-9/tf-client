@@ -3,6 +3,7 @@ import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 import 'animate.css';
 import Footer from '@/partials/layout/Footer';
+import Navigation from '@/partials/layout/Navigation';
 
 export const metadata = {
 	title: {
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang="bg">
 			<body className="bg-black">
+				<Navigation />
 				{children}
 				<Footer />
 				<Analytics />

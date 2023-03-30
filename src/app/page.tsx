@@ -1,13 +1,20 @@
 import Countdown from '@/components/countdown';
 
-import { TITLE } from '@/constants/keywords';
+import About from '@/partials/home/About';
+import Expectations from '@/partials/home/Expectations';
+import Schedule from '@/partials/home/Schedule';
+import Sponsors from '@/partials/home/Sponsors';
+import Testimonial from '@/partials/home/Testimonial';
 
 import 'animate.css';
 
 export default function Home() {
 	return (
-		<main className="">
-			<div className="p-4 w-full h-screen flex flex-col lg:flex-row items-center justify-center gap-4 md:gap-16">
+		<main className="max-w-screen-2xl m-auto">
+			<section
+				id="front-section"
+				className="p-4 w-full h-screen flex flex-col lg:flex-row items-center justify-center gap-4 md:gap-16"
+			>
 				<h1 className="animate__animated animate__fadeInTopLeft !leading-tight !tracking-wide text-7xl sm:text-6xl md:text-8xl text-center font-zone99 font-normal drop-shadow-lg">
 					TUES{' '}
 					<span className="!leading-tight !tracking-wide text-7xl sm:text-6xl md:text-8xl text-center font-zone99 font-normal text-primary drop-shadow-lg">
@@ -19,7 +26,12 @@ export default function Home() {
 					</span>
 				</h1>
 				<Countdown />
-			</div>
+			</section>
+			<About />
+			<Sponsors />
+			<Expectations />
+			<Schedule />
+			<Testimonial />
 		</main>
 	);
 }
