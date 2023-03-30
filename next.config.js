@@ -7,6 +7,13 @@ const nextConfig = {
 	experimental: {
 		appDir: true,
 	},
+	async redirects() {
+		return [{
+			source: '/schedule',
+			destination: '/#schedule',
+			permanent: true,
+		}, ]
+	},
 };
 
 module.exports = nextConfig;
