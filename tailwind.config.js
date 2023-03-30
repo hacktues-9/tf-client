@@ -13,6 +13,7 @@ module.exports = {
 		fontFamily: {
 			inter: "'Inter', sans-serif",
 			zone99: 'warzone97',
+			origin: 'OriginTechDemoRegular',
 		},
 		container: {
 			center: true,
