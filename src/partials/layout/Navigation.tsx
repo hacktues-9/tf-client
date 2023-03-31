@@ -46,7 +46,9 @@ const Linky = ({ href, children }: { href: string; children: string }) => {
 const Navigation = () => {
 	// change background color of navigation when scrolled down by 50px
 	const [scrolled, setScrolled] = useState(false);
-	const [selected, setSelected] = useState(0);
+	const [mobileOpen, setMobileOpen] = useState(false);
+	const mobileMenuRef = useRef<HTMLDivElement>(null);
+	const mobileButtonRef = useRef<HTMLButtonElement>(null);
 
 	const handleScroll = () => {
 		const offset = window.scrollY;
@@ -60,6 +62,24 @@ const Navigation = () => {
 	useEffect(() => {
 		window.addEventListener('scroll', handleScroll);
 	}, []);
+
+	useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			if (mobileOpen && mobileMenuRef.current && mobileButtonRef.current) {
+				if (
+					!mobileMenuRef.current.contains(event.target as Node) &&
+					!mobileButtonRef.current.contains(event.target as Node)
+				) {
+					setMobileOpen(false);
+				}
+			}
+		};
+
+		document.addEventListener('mousedown', handleClickOutside);
+		return () => {
+			document.removeEventListener('mousedown', handleClickOutside);
+		};
+	}, [mobileOpen, mobileMenuRef, mobileButtonRef]);
 
 	let navbarClasses = [
 		'header',
@@ -96,23 +116,25 @@ const Navigation = () => {
 					<div className="flex w-full items-center justify-between px-4">
 						<div>
 							<button
-								// @click="navbarOpen = !navbarOpen "
-								// :className="navbarOpen && 'navbarTogglerActive' "
+								onClick={() => setMobileOpen(!mobileOpen)}
 								id="navbarToggler"
 								name="navbarToggler"
-								aria-label="navbarToggler"
+								ref={mobileButtonRef}
 								className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-3 ring-primary focus:ring-2 lg:hidden"
 							>
 								<TbMenu2 size={32} />
 							</button>
 							<nav
-								// :className="!navbarOpen && 'hidden' "
 								id="navbarCollapse"
-								className="absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-bg-color shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent py-3 lg:py-0 lg:px-4 lg:shadow-none xl:px-6"
+								ref={mobileMenuRef}
+								className={
+									`absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-bg-color shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent py-3 lg:py-0 lg:px-4 lg:shadow-none xl:px-6` +
+									(mobileOpen ? ' block' : ' hidden')
+								}
 							>
 								<ul className="block lg:flex">
 									{LINKS.map((link, index) => (
-										<li className="group relative" key={index}>
+										<li className="group relative" onClick={() => setMobileOpen(false)} key={index}>
 											<Linky href={link.href}>{link.title}</Linky>
 										</li>
 									))}
