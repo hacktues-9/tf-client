@@ -1,5 +1,7 @@
+import ComingSoon from '@/partials/projects/ComingSoon';
+
 const ProjectsPage = () => {
-	return <div>Coming soon!</div>;
+	return <ComingSoon />;
 };
 
 ProjectsPage.getInitialProps = async () => {
