@@ -11,7 +11,7 @@ const nextConfig = {
 		return [{
 			source: '/schedule',
 			destination: '/#schedule',
-			permanent: true,
+			permanent: false
 		}, ]
 	},
 };
