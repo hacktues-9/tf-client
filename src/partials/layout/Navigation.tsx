@@ -19,7 +19,7 @@ const LINKS = [
 		title: 'Кандидатстване',
 	},
 	{
-		href: '/schedule',
+		href: '#schedule',
 		title: 'Програма',
 	},
 	{
@@ -138,6 +138,12 @@ const Navigation = () => {
 											<Linky href={link.href}>{link.title}</Linky>
 										</li>
 									))}
+									<li
+										className="sm:hidden group relative"
+										onClick={() => setMobileOpen(false)}
+									>
+										<Linky href="/about">За ТУЕС</Linky>
+									</li>
 								</ul>
 							</nav>
 						</div>
