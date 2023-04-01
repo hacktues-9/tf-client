@@ -52,8 +52,8 @@ const AboutPage = () => {
 							</p>
 						</div>
 					</div>
-					<div className="w-full lg:w-2/5 lg:block shrink-0 overflow-hidden bg-bg-color border border-stroke rounded-xl">
-						<img src="/assets/about/about.jpg" />
+					<div className="w-full max-w-3xl lg:w-2/5 lg:block shrink-0 overflow-hidden bg-bg-color border border-stroke rounded-xl">
+						<img src="/assets/about/about.jpg" alt="ТУЕС ученици" className=" max-w-3xl" />
 					</div>
 				</div>
 				<div className="pt-8 md:pt-12 flex flex-col gap-4">
@@ -100,26 +100,26 @@ const AboutPage = () => {
 					</ul>
 				</div>
 				<div className="pt-8 md:pt-12">
-					<div className="bg-bg-color rounded-xl border border-stroke p-4 flex gap-4">
+					<div className="bg-bg-color rounded-xl border border-stroke p-4 flex flex-col md:flex-row gap-4">
 						<div className="w-full p-4 flex flex-col gap-4 items-center rounded-xl bg-[#353444] border border-stroke">
 							<TbSchool size={64} className="opacity-70" />
 							<p className="text-5xl font-black bg-gradient text-transparent bg-clip-text">2846</p>
-							<p className="text-md opacity-70">завършили ученици</p>
+							<p className="text-md opacity-70 text-center">завършили ученици</p>
 						</div>
 						<div className="w-full p-4 flex flex-col gap-4 items-center rounded-xl bg-[#353444] border border-stroke">
 							<TbTrophy size={64} className="opacity-70" />
 							<p className="text-5xl font-black bg-gradient text-transparent bg-clip-text">87</p>
-							<p className="text-md opacity-70">награди и отличия</p>
+							<p className="text-md opacity-70 text-center">награди и отличия</p>
 						</div>
 						<div className="w-full p-4 flex flex-col gap-4 items-center rounded-xl bg-[#353444] border border-stroke">
 							<TbBriefcase size={64} className="opacity-70" />
 							<p className="text-5xl font-black bg-gradient text-transparent bg-clip-text">140</p>
-							<p className="text-md opacity-70">стажа на година</p>
+							<p className="text-md opacity-70 text-center">стажа на година</p>
 						</div>
 						<div className="w-full p-4 flex flex-col gap-4 items-center rounded-xl bg-[#353444] border border-stroke">
 							<TbHistory size={64} className="opacity-70" />
 							<p className="text-5xl font-black bg-gradient text-transparent bg-clip-text">35</p>
-							<p className="text-md opacity-70">годишна история</p>
+							<p className="text-md opacity-70 text-center">годишна история</p>
 						</div>
 					</div>
 				</div>
@@ -166,7 +166,7 @@ const AboutPage = () => {
 					<img
 						src="/assets/about/hacktues 9.jpg"
 						alt="HackTUES 9 организатори"
-						className="max-w-3xl m-auto rounded-xl border border-stroke"
+						className="w-full max-w-3xl m-auto rounded-xl border border-stroke"
 					/>
 					<p className="text-justify">
 						Това е първият и единствен по рода си хакатон в България, организиран от ученици за ученици.
@@ -176,7 +176,10 @@ const AboutPage = () => {
 					</p>
 					<p className="text-justify">
 						Прочетете невероятната история на деветото му издание с тема Security{' '}
-						<Link href="https://tues.bg/novini-i-sybitija/novini/hack-tues-security-642"><u>тук</u></Link>.
+						<Link href="https://tues.bg/novini-i-sybitija/novini/hack-tues-security-642">
+							<u>тук</u>
+						</Link>
+						.
 					</p>
 				</div>
 			</div>
