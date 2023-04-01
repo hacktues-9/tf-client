@@ -13,6 +13,7 @@ module.exports = {
 		fontFamily: {
 			inter: "'Inter', sans-serif",
 			zone99: 'warzone97',
+			origin: 'OriginTechDemoRegular',
 		},
 		container: {
 			center: true,
@@ -31,11 +32,11 @@ module.exports = {
 			secondary: '#36B37E',
 			yellow: '#FBB040',
 			'body-color': '#A1A0AE',
-			gradient: 'linear-gradient(158.44deg, #EBC77A 7.17%, #CA3F8D 52.72%, #5142FC 91.26%)',
+			gradient: 'linear-gradient(158.44deg, #68CBE9 7.17%, #7775B4 52.72%, #7B51A1 91.26%)',
 		},
 		extend: {
 			backgroundImage: (theme) => ({
-				gradient: 'linear-gradient(158.44deg, #EBC77A 7.17%, #CA3F8D 52.72%, #5142FC 91.26%)',
+				gradient: 'linear-gradient(158.44deg, #68CBE9 7.17%, #7775B4 52.72%, #7B51A1 91.26%)',
 			}),
 			boxShadow: {
 				primary: '0px 4px 16px rgba(81, 66, 252, 0.4)',

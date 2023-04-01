@@ -5,7 +5,7 @@ const Socials = () => (
 		<div className="mb-16">
 			<div className="max-w-[300px]">
 				<Link href="/" className="mb-7 inline-block">
-					<img src="/logo/motto.svg" alt="logo" className="h-24" />
+					<img src="/logo/motto.png" alt="logo" className="h-24" />
 				</Link>
 				<p className="mb-6 text-base font-medium text-body-color">
 					ТУЕС Фест е ежегодно изложение на проекти, създадени от талантливите ученици на ТУЕС.
