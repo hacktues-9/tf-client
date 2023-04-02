@@ -53,7 +53,7 @@ const AboutPage = () => {
 						</div>
 					</div>
 					<div className="w-full max-w-3xl lg:w-2/5 lg:block shrink-0 overflow-hidden bg-bg-color border border-stroke rounded-xl">
-						<img src="/assets/about/about.jpg" alt="ТУЕС ученици" className=" max-w-3xl" />
+						<img src="/assets/about/about.jpg" alt="ТУЕС ученици" className="object-center w-full max-w-3xl" />
 					</div>
 				</div>
 				<div className="pt-8 md:pt-12 flex flex-col gap-4">
