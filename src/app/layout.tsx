@@ -1,9 +1,12 @@
+import Script from 'next/script';
+
 import { Analytics } from '@vercel/analytics/react';
+
+import Footer from '@/partials/layout/Footer';
+import Navigation from '@/partials/layout/Navigation';
 
 import './globals.css';
 import 'animate.css';
-import Footer from '@/partials/layout/Footer';
-import Navigation from '@/partials/layout/Navigation';
 
 export const metadata = {
 	title: {
@@ -31,7 +34,8 @@ export const metadata = {
 	assets: ['https://tuesfest.bg/favicon.png', 'https://tuesfest.bg/logo/motto.png', 'https://tuesfest.bg/assets'],
 	openGraph: {
 		title: 'TUES Fest 2023',
-		description: 'TUES Fest 2023 - ден на отворените врати на ТУЕС и изложение на ученически проекти. София Тех Парк - 23 април 2023.',
+		description:
+			'TUES Fest 2023 - ден на отворените врати на ТУЕС и изложение на ученически проекти. София Тех Парк - 23 април 2023.',
 		url: 'https://tuesfest.bg',
 		siteName: 'TUES Fest 2023',
 		images: [
@@ -47,6 +51,18 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="bg">
+			<head>
+				<Script src="https://www.googletagmanager.com/gtag/js?id=G-1H1H1CR559" strategy="afterInteractive" />
+				<Script id="google-analytics" strategy="afterInteractive">
+					{`
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+
+						gtag('config', 'G-1H1H1CR559');
+					`}
+				</Script>
+			</head>
 			<body className="bg-black">
 				<Navigation />
 				{children}
