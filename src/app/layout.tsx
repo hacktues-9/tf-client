@@ -52,8 +52,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang="bg">
 			<head>
+				<link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any"></link>
 				<script src="https://www.googletagmanager.com/gtag/js?id=G-1H1H1CR559" strategy="afterInteractive" />
-				<script id="google-analytics" strategy="afterInteractive">
+				<script id="google-analytics" async >
 					{`
 						window.dataLayer = window.dataLayer || [];
 						function gtag(){dataLayer.push(arguments);}
