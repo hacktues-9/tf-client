@@ -83,8 +83,9 @@ const Calculator = () => {
 			errors.phys7 = '';
 		}
 
+		setErrorCalculator(errors);
+
 		if (errors.bgl || errors.math || errors.math7 || errors.phys7) {
-			setErrorCalculator(errors);
 			return;
 		}
 
@@ -173,7 +174,7 @@ const ApplyPage = () => (
 						България и отвъд.
 					</p>
 					<div className="relative w-full flex flex-col lg:flex-row gap-8 items-start">
-						<div className='w-full flex flex-col gap-4'>
+						<div className="w-full flex flex-col gap-4">
 							<p className="text-lg">Кое прави ТУЕС уникално училище?</p>
 							<ul className="w-full flex flex-col gap-4">
 								<li className="p-4 rounded-xl text-md border border-stroke bg-[#353444]">

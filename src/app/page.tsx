@@ -28,9 +28,9 @@ export default function Home() {
 				<Countdown />
 			</section>
 			<About />
-			<Sponsors />
 			<Expectations />
 			<Schedule />
+			<Sponsors />
 			<Testimonial />
 		</main>
 	);
