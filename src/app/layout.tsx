@@ -5,8 +5,8 @@ import { Analytics } from '@vercel/analytics/react';
 import Footer from '@/partials/layout/Footer';
 import Navigation from '@/partials/layout/Navigation';
 
-import './globals.css';
 import 'animate.css';
+import './globals.css';
 
 export const metadata = {
 	title: {
@@ -52,9 +52,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang="bg">
 			<head>
-				<link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any"></link>
-				<script src="https://www.googletagmanager.com/gtag/js?id=G-1H1H1CR559" strategy="afterInteractive" />
-				<script id="google-analytics" async >
+				<Script src="https://www.googletagmanager.com/gtag/js?id=G-1H1H1CR559" strategy="afterInteractive" />
+				<Script id="google-analytics" strategy="afterInteractive">
 					{`
 						window.dataLayer = window.dataLayer || [];
 						function gtag(){dataLayer.push(arguments);}
@@ -62,7 +61,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 						gtag('config', 'G-1H1H1CR559');
 					`}
-				</script>
+				</Script>
+				<link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any"></link>
 			</head>
 			<body className="bg-black">
 				<Navigation />
