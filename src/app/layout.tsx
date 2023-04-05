@@ -52,8 +52,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang="bg">
 			<head>
-				<Script src="https://www.googletagmanager.com/gtag/js?id=G-1H1H1CR559" strategy="afterInteractive" />
-				<Script id="google-analytics" strategy="afterInteractive">
+				<script src="https://www.googletagmanager.com/gtag/js?id=G-1H1H1CR559" strategy="afterInteractive" />
+				<script id="google-analytics" strategy="afterInteractive">
 					{`
 						window.dataLayer = window.dataLayer || [];
 						function gtag(){dataLayer.push(arguments);}
@@ -61,7 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 						gtag('config', 'G-1H1H1CR559');
 					`}
-				</Script>
+				</script>
 			</head>
 			<body className="bg-black">
 				<Navigation />
