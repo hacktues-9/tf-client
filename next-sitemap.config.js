@@ -16,6 +16,10 @@ module.exports = {
             },
             {
                 userAgent: "*",
+                disallow: "/iskren",
+            },
+            {
+                userAgent: "*",
                 disallow: "/auth",
             },
         ],
