@@ -29,13 +29,13 @@ const LINKS = [
 ];
 
 const Linky = ({ href, children }: { href: string; children: string }) => {
-	const [selected, setSelected] = useState(false);
+	// const [selected, setSelected] = useState(false); - would've been used, but it was deemed unnecessary
 
 	return (
 		<Link
 			href={href}
 			className={`mx-8 flex py-2 text-base font-semibold whitespace-nowrap ${
-				selected ? 'text-white' : 'text-[#bababa]'
+				/* selected ? 'text-white' : */ 'text-[#bababa]'
 			} group-hover:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
 		>
 			{children}
@@ -44,9 +44,9 @@ const Linky = ({ href, children }: { href: string; children: string }) => {
 };
 
 const Navigation = () => {
-	// change background color of navigation when scrolled down by 50px
 	const [scrolled, setScrolled] = useState(false);
 	const [mobileOpen, setMobileOpen] = useState(false);
+
 	const mobileMenuRef = useRef<HTMLDivElement>(null);
 	const mobileButtonRef = useRef<HTMLButtonElement>(null);
 
@@ -92,12 +92,10 @@ const Navigation = () => {
 		'transition',
 		'fixed',
 		'duration-500',
+		...(scrolled
+			? ['z-50', 'bg-dark', 'bg-opacity-70', 'shadow-sticky', 'backdrop-blur-lg', 'duration-500']
+			: ['bg-transparent', 'z-50']),
 	];
-	if (scrolled) {
-		navbarClasses.push('z-50', 'bg-dark', 'bg-opacity-70', 'shadow-sticky', 'backdrop-blur-lg', 'duration-500');
-	} else {
-		navbarClasses.push('bg-transparent', 'z-50');
-	}
 
 	return (
 		<header className={navbarClasses.join(' ')}>
@@ -133,15 +131,16 @@ const Navigation = () => {
 								}
 							>
 								<ul className="block lg:flex">
-									{LINKS.map((link, index) => (
-										<li className="group relative" onClick={() => setMobileOpen(false)} key={index}>
+									{LINKS.map((link) => (
+										<li
+											className="group relative"
+											onClick={() => setMobileOpen(false)}
+											key={link.title}
+										>
 											<Linky href={link.href}>{link.title}</Linky>
 										</li>
 									))}
-									<li
-										className="sm:hidden group relative"
-										onClick={() => setMobileOpen(false)}
-									>
+									<li className="sm:hidden group relative" onClick={() => setMobileOpen(false)}>
 										<Linky href="/about">За ТУЕС</Linky>
 									</li>
 								</ul>

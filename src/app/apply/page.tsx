@@ -1,8 +1,23 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import Link from 'next/link';
 
 import { useEffect, useState } from 'react';
+
+const EMPTY_CALC = {
+	bgl: 0,
+	math: 0,
+	math7: 2,
+	phys7: 2,
+};
+
+const EMPTY_ERR = {
+	bgl: '',
+	math: '',
+	math7: '',
+	phys7: '',
+};
 
 const CalculatorField = ({ name, label, min, max, value, error, onChange }: any) => {
 	return (
@@ -32,18 +47,8 @@ const Calculator = () => {
 		math: any;
 		math7: any;
 		phys7: any;
-	}>({
-		bgl: 0,
-		math: 0,
-		math7: 2,
-		phys7: 2,
-	});
-	const [errorCalculator, setErrorCalculator] = useState({
-		bgl: '',
-		math: '',
-		math7: '',
-		phys7: '',
-	});
+	}>(EMPTY_CALC);
+	const [errorCalculator, setErrorCalculator] = useState(EMPTY_ERR);
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		setCalculator({ ...calculator, [e.target.name]: e.target.value === '' ? '' : parseFloat(e.target.value) });
@@ -53,42 +58,23 @@ const Calculator = () => {
 		if (calculator.bgl === '' || calculator.math === '' || calculator.math7 === '' || calculator.phys7 === '')
 			return;
 
-		let errors = {
-			bgl: '',
-			math: '',
-			math7: '',
-			phys7: '',
-		};
+		let errors = EMPTY_ERR;
 
-		if (calculator.bgl < 0 || calculator.bgl > 100) {
-			errors.bgl = 'НВО по БЕЛ трябва да е между 0 и 100т.';
-		} else {
-			errors.bgl = '';
-		}
+		errors.bgl = calculator.bgl < 0 || calculator.bgl > 100 ? 'НВО по БЕЛ трябва да е между 0 и 100т.' : '';
 
-		if (calculator.math < 0 || calculator.math > 100) {
-			errors.math = 'НВО по Математика трябва да е между 0 и 100т.';
-		} else {
-			errors.math = '';
-		}
+		errors.math =
+			calculator.math < 0 || calculator.math > 100 ? 'НВО по Математика трябва да е между 0 и 100т.' : '';
 
-		if (calculator.math7 < 2 || calculator.math7 > 6) {
-			errors.math7 = 'Оценка по Математика за 7 клас трябва да е между 2 и 6.';
-		} else {
-			errors.math7 = '';
-		}
+		errors.math7 =
+			calculator.math7 < 2 || calculator.math7 > 6
+				? 'Оценка по Математика за 7 клас трябва да е между 2 и 6.'
+				: '';
 
-		if (calculator.phys7 < 2 || calculator.phys7 > 6) {
-			errors.phys7 = 'Оценка по Физика за 7 клас трябва да е между 2 и 6.';
-		} else {
-			errors.phys7 = '';
-		}
+		errors.phys7 =
+			calculator.phys7 < 2 || calculator.phys7 > 6 ? 'Оценка по Физика за 7 клас трябва да е между 2 и 6.' : '';
 
 		setErrorCalculator(errors);
-
-		if (errors.bgl || errors.math || errors.math7 || errors.phys7) {
-			return;
-		}
+		if (errors.bgl || errors.math || errors.math7 || errors.phys7) return;
 
 		const result = calculator.bgl + calculator.math * 3 + (calculator.math7 - 1) * 10 + (calculator.phys7 - 1) * 10;
 		setResult(result);
@@ -193,7 +179,7 @@ const ApplyPage = () => (
 							</ul>
 						</div>
 						<div className="w-full lg:w-3/5 xl:w-2/5 shrink-0 rounded-xl overflow-hidden border border-stroke">
-							<img src="/assets/apply/whytues.jpg" />
+							<img src="/assets/apply/whytues.jpg" alt="Защо ТУЕС?" />
 						</div>
 					</div>
 					<i>

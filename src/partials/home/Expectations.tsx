@@ -14,8 +14,8 @@ const Expectations = () => (
 	<section id="expectations" className="flex flex-col p-8 md:px-12 gap-8">
 		<h2 className="bg-gradient text-transparent font-black text-5xl bg-clip-text">На ТУЕС ФЕСТ очаквайте</h2>
 		<div className="flex flex-wrap items-stretch justify-center gap-4">
-			{EXPECTATIONS.map((expectation, index) => (
-				<Expectation key={index} {...expectation} />
+			{EXPECTATIONS.map((expectation) => (
+				<Expectation key={expectation.title} {...expectation} />
 			))}
 		</div>
 	</section>

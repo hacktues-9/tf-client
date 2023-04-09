@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 
 import { TbBriefcase, TbHistory, TbSchool, TbTrophy } from 'react-icons/tb';
@@ -56,7 +57,7 @@ const AboutPage = () => {
 					<div className="w-full max-w-3xl lg:w-2/5 lg:block shrink-0 overflow-hidden bg-bg-color border border-stroke rounded-xl">
 						<img
 							src="/assets/about/about.jpg"
-							alt="ТУЕС ученици"
+							alt="Ученици на ТУЕС (Технологично училище “Електронни системи” към Технически Университет - София)"
 							className="object-center w-full max-w-3xl"
 						/>
 					</div>
