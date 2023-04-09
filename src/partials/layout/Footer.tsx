@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 import { TbBrandLinktree } from 'react-icons/tb';
 
 const Socials = () => (
@@ -145,7 +146,7 @@ const TUES = () => (
 						href="https://www.elsys-bg.org/uchenicheski-jivot/klubove"
 						className="mb-4 inline-block text-base font-medium text-body-color transition hover:text-white"
 					>
-                        Клубове
+						Клубове
 					</Link>
 				</li>
 				<li>
@@ -184,12 +185,12 @@ const Subscribe = () => (
 					name="newslettersEmail"
 					placeholder="tuesfest@elsys-bg.org"
 					className="h-12 w-full rounded-lg border border-stroke bg-transparent pl-5 pr-10 text-sm font-medium text-white outline-none focus:border-primary"
-                    disabled
+					disabled
 				/>
 				<a
 					// type="submit"
 					// name="submit"
-                    href='mailto:tuesfest@elsys-bg.org'
+					href="mailto:tuesfest@elsys-bg.org"
 					aria-label="submit"
 					className="absolute right-[6px] top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-md bg-primary text-white cursor-pointer hover:shadow-md"
 				>

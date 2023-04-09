@@ -1,4 +1,4 @@
-import { EXPECTATIONS } from "@/constants/home/expectations";
+import { EXPECTATIONS } from '@/constants/home/expectations';
 
 const Expectation = ({ icon, title, text }: { icon: JSX.Element; title: string; text: string }) => (
 	<div className="w-full md:w-2/5 lg:w-1/3 2xl:w-1/4">

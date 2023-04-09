@@ -1,9 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import { useRouter } from 'next/compat/router';
-import { useEffect, useRef, useState } from 'react';
+
 import { TbMenu2, TbSchool } from 'react-icons/tb';
+import { useEffect, useRef, useState } from 'react';
 
 const LINKS = [
 	{

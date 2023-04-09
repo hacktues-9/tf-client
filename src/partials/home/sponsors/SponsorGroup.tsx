@@ -1,5 +1,6 @@
-import { TYPE } from '@/constants/home/sponsors';
 import Sponsor from './Sponsor';
+
+import { TYPE } from '@/constants/home/sponsors';
 
 const SponsorGroup = ({
 	type,

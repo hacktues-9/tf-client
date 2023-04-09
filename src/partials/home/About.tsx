@@ -1,8 +1,8 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
-import 'animate.css';
 import { ABOUT_BUTTON, ABOUT_IMAGE, ABOUT_SUBTEXT, ABOUT_TEXT, ABOUT_TITLE } from '@/constants/home/about';
+
+import 'animate.css';
 
 const About = () => (
 	<section id="about" className="p-8 md:p-12">

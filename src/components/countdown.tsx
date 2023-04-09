@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from 'react';
 
-import countdownStyles from '@/styles/home/countdown.module.css';
 import 'animate.css';
+
+import countdownStyles from '@/styles/home/countdown.module.css';
 
 const THE_DATE = new Date('Apr 23, 2023 10:00:00').getTime();
 
