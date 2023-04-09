@@ -186,11 +186,6 @@ export const SPONSORS = [
 				url: 'https://bg-bg.facebook.com/greencherrycafe/',
 			},
 			{
-				name: 'Multivisia',
-				logo: '/assets/sponsors/partners/multivisia.png',
-				url: 'https://www.multivisia.com',
-			},
-			{
 				name: 'Pure Water',
 				logo: '/assets/sponsors/partners/pure_water.png',
 				url: 'https://purewater.bg/',
