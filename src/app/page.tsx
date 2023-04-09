@@ -17,7 +17,7 @@ export default function Home() {
 				id="front-section"
 				className="p-4 py-32 w-full min-h-screen flex flex-col lg:flex-row items-center justify-center gap-4 md:gap-16"
 			>
-				<div className="animate__animated animate__fadeInTopLeft">
+				<div /* className="animate__animated animate__fadeInTopLeft" */>
 					<h1 className="!leading-none !tracking-wide text-8xl sm:text-8xl md:text-9xl text-center font-origin font-normal drop-shadow-lg">
 						TUES{' '}
 						<span className="!leading-none !tracking-wide text-8xl sm:text-8xl md:text-9xl text-center font-origin font-normal bg-gradient text-transparent bg-clip-text drop-shadow-lg">

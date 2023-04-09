@@ -117,7 +117,7 @@ const Countdown = () => {
 	}, []);
 
 	return (
-		<div className={countdownStyles.stack + ' animate__animated animate__fadeInTopRight'}>
+		<div className={countdownStyles.stack /* + ' animate__animated animate__fadeInTopRight' */}>
 			{Array.from({ length: 3 }, (_, i) => (
 				<ul key={i} id={countdownStyles['stack' + i]} className={countdownStyles.countdown + ' gap-4'}>
 					<li id={countdownStyles.days} className="bg-bg-color rounded-xl border border-border">
