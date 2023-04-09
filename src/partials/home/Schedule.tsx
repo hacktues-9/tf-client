@@ -111,7 +111,7 @@ const Schedule = () => (
 							item.pos === 'left' ? 'sm:flex-row-reverse' : 'sm:flex-row'
 						}`}
 					>
-						<div className="flex flex-col gap-2 w-3/5 max-w-3xl p-[2px] rounded-xl bg-stroke hover:bg-gradient">
+						<div className="flex flex-col gap-2 w-full sm:w-3/5 max-w-3xl p-[2px] rounded-xl bg-stroke hover:bg-gradient">
 							<div className="flex w-full flex-col gap-2 p-4 rounded-xl bg-bg-color">
 								<h3 className="text-3xl font-bold mr-4">{item.title}</h3>
 								<div className="w-full h-[2px] bg-border rounded-full" />
