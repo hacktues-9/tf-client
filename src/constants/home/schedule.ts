@@ -36,7 +36,7 @@ export const SCHEDULE = [
 		end: '17:00',
 		title: 'Treasure Hunt',
 		description:
-			'На TUES Fest 2023 ще ви очаква един интересен и забавен Treasure Hunt, в който може да спечелите много награди. ',
+			'На tues fest 2023 ще ви очаква един интересен и забавен Treasure Hunt, в който може да спечелите много награди. ',
 		icon: '',
 		pos: 'right',
 	},

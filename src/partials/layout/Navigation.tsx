@@ -108,7 +108,11 @@ const Navigation = () => {
 								scrolled ? ' py-4 lg:py-2' : ' py-5 lg:py-7'
 							}`}
 						>
-							TUESFest 2023
+							tues{' '}
+							<span className="font-origin font-normal bg-gradient text-transparent bg-clip-text ">
+								fest
+							</span>
+							{" "}2023
 						</Link>
 					</div>
 					<div className="flex w-full items-center justify-between px-4">
