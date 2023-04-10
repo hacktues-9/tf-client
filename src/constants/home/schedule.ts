@@ -1,7 +1,7 @@
 export const SCHEDULE = [
 	{
 		start: '10:30',
-		end: '11:20',
+		end: '11:00',
 		title: 'Oткриваща церемония',
 		description:
 			'<p>Началото на тазгодишното издание на TUES Fest - <h4 class="font-origin inline bg-gradient bg-clip-text text-transparent">TUES Fest 2023</h3>, във <a href="https://goo.gl/maps/14J3ZJbvwqte5ycD7"><u><i>форум "Джон Атанасов", София Тех Парк</i></u></a> от 10:30 на 23 април. Започвайки с нашата директорка - Стела Стефанова.</p>',
@@ -9,7 +9,7 @@ export const SCHEDULE = [
 		pos: 'left',
 	},
 	{
-		start: '11:20',
+		start: '11:00',
 		end: '16:00',
 		title: 'Изложение на ученически проекти и гласуване',
 		description: `След официалното откриване всеки посетител ще има възможността:
@@ -32,7 +32,7 @@ export const SCHEDULE = [
 		pos: 'left',
 	},
 	{
-		start: '11:30',
+		start: '11:00',
 		end: '17:00',
 		title: 'Treasure Hunt',
 		description:
