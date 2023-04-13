@@ -1,6 +1,41 @@
 import Link from 'next/link';
 import { TbBriefcase, TbHistory, TbSchool, TbTrophy } from 'react-icons/tb';
 
+export const metadata = {
+	title: {
+		default: 'За ТУЕС',
+		template: '%s | TUES Fest 2023',
+	},
+	description:
+		'Научете повече за най-доброто училище в България - Технологично училище "Електронни системи", което през 2022 беше с втори най-висок бал за страната. ТУЕС е училище с 35 години история, което е специализирано в областта на ИТ и единствено в България подготвя специалисти в областта на системно програмиране.',
+	keywords: [
+		'туес',
+		'туес фест',
+		'туес фест 2023',
+		'технологично училище електронни системи',
+		'технологично',
+		'училище',
+		'електронни',
+		'системи',
+		'туес 2023',
+		'кандидатстване',
+		'училища софия',
+		'училища',
+		'софия',
+		'софия туес',
+		'най-добро училище',
+		'най-добро училище в българия',
+		'най-добро училище в софия',
+		'висок бал',
+		'елитно училище',
+		'елитно',
+		'училище в софия',
+		'минимален бал',
+		'минимален бал за туес',
+		'минимален бал софия',
+	],
+};
+
 const AboutPage = () => {
 	return (
 		<div className="max-w-screen-2xl min-h-screen m-auto p-8 md:p-12">
@@ -53,7 +88,11 @@ const AboutPage = () => {
 						</div>
 					</div>
 					<div className="w-full max-w-3xl lg:w-2/5 lg:block shrink-0 overflow-hidden bg-bg-color border border-stroke rounded-xl">
-						<img src="/assets/about/about.jpg" alt="ТУЕС ученици" className="object-center w-full max-w-3xl" />
+						<img
+							src="/assets/about/about.jpg"
+							alt="ТУЕС ученици"
+							className="object-center w-full max-w-3xl"
+						/>
 					</div>
 				</div>
 				<div className="pt-8 md:pt-12 flex flex-col gap-4">
