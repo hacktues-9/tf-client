@@ -13,8 +13,11 @@ export interface Project {
 	category: string;
 }
 
-async function getProjects() {
-	const res = await fetch('https://api.tuesfest.bg/v1/get/projects' /* { cache: 'no-store' } */);
+async function getProjects(category: string) {
+	const url = `https://api.tuesfest.bg/v1/get/projects/${category !== 'all' ? category : ''}`;
+	// console.log(url)
+
+	const res = await fetch(url /* { cache: 'no-store' } */);
 
 	if (!res.ok) {
 		// This will activate the closest `error.js` Error Boundary
@@ -27,10 +30,10 @@ async function getProjects() {
 	return projects;
 }
 
-const Projects = async () => {
-	const projects: Project[] = await getProjects();
+const Projects = async ({ category }: { category: string }) => {
+	const projects: Project[] = await getProjects(category);
 
-	if (!projects.length) return null;
+	if (!projects || !projects?.length) return null;
 
 	return (
 		<div className="-mx-4 flex items-stretch justify-center flex-wrap">
@@ -64,14 +67,16 @@ const Projects = async () => {
 								>
 									Виж проекта {/* TODO: change to vode, on 23 april */}
 								</Link>
-								<Link
-									href={project.video}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="flex items-center justify-center rounded-md text-sm font-semibold text-white hover:text-primary sm:px-5"
-								>
-									<TbBrandYoutube size={32} />
-								</Link>
+								{project.video && (
+									<Link
+										href={project.video}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="flex items-center justify-center rounded-md text-sm font-semibold text-white hover:text-primary sm:px-5"
+									>
+										<TbBrandYoutube size={32} />
+									</Link>
+								)}
 
 								{/* When voting - use this as 'view project' */}
 								{/* <a

@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-
+import { notFound } from 'next/navigation';
 import ProjectsPath from '@/partials/layout/ProjectsPath';
 
 import MainInfo from '@/partials/projects/project/MainInfo';
@@ -58,7 +58,8 @@ export async function generateMetadata({ params }: { params: { projectId: string
 
 const ProjectPage = async ({ params }: { params: { projectId: string } }) => {
 	const project = await getProject(params.projectId);
-	// console.warn('AAAAAA', project.name);
+
+	if (project === undefined || project === null || project.id === 0) notFound();
 
 	const path = [
 		{
