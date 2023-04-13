@@ -6,6 +6,7 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
 	useEffect(() => {
 		// Log the error to an error reporting service
 		console.error(error);
+        console.log(error.cause)
 	}, [error]);
 
 	return (

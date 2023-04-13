@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import { TbBrandYoutube } from 'react-icons/tb';
+import { redirect } from 'next/navigation';
 
 export interface Project {
 	id: string;
@@ -14,8 +15,10 @@ export interface Project {
 }
 
 async function getProjects(category: string) {
-	const url = `https://api.tuesfest.bg/v1/get/projects/${category !== 'all' ? category : ''}`;
-	// console.log(url)
+	if (!['software', 'embedded', 'battlebot', 'networks', 'all'].includes(category)) redirect('/projects');
+
+	const url = `https://api.tuesfest.bg/v1/get/projects/${category === 'all' ? '' : category}`;
+	console.warn(url)
 
 	const res = await fetch(url /* { cache: 'no-store' } */);
 
@@ -29,8 +32,8 @@ async function getProjects(category: string) {
 				debug: {
 					url: url,
 					category: category,
-				}
-			}
+				},
+			},
 		});
 	}
 
