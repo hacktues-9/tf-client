@@ -48,6 +48,7 @@ export async function generateMetadata({
 	searchParams: URLSearchParams;
 }) {
 	const project = await getProject(params.projectId);
+	// TODO: add more metadata + image - thumbnail or first picture
 	return { title: project.name };
 }
 
