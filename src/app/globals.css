@@ -45,3 +45,24 @@ body {
 		-moz-appearance: textfield !important;
 	}
 }
+
+
+.tns-controls {
+  @apply flex items-center space-x-4 absolute -top-28 right-0;
+}
+
+.tns-controls button {
+  @apply w-10 h-10 flex items-center justify-center rounded-md border border-white border-opacity-[12%] bg-white bg-opacity-5 text-white hover:bg-primary hover:border-primary;
+}
+
+.tns-nav {
+  @apply space-x-2 flex justify-center;
+}
+
+.tns-nav button {
+  @apply w-3 h-3 rounded-full bg-white bg-opacity-10 hover:bg-primary transition;
+}
+
+.tns-nav .tns-nav-active {
+  @apply bg-primary;
+}
