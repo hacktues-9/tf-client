@@ -48,7 +48,7 @@ const Gallery = ({ name, pictures }: { name: string; pictures: Picture[] }) => {
 				<div className="h-full">
 					<div className="h-full shrink-0 flex flex-col gap-4">
 						<div className="h-full flex overflow-x-auto p-4 gap-4 items-center justify-start">
-							{pictures.map((picture, index) => (
+							{pictures?.map((picture, index) => (
 								<div
 									key={picture.url}
 									className="h-full shrink-0 overflow-hidden !aspect-square rounded-xl border-2 border-border"

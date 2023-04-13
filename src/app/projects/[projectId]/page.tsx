@@ -53,13 +53,13 @@ const getProject = async (id: string) => {
 export async function generateMetadata({ params }: { params: { projectId: string } }) {
 	const project = await getProject(params.projectId);
 
-	const images = project.pictures.map((picture) => ({
+	const images = project.pictures?.map((picture) => ({
 		url: picture.url,
 		is_thumbnail: picture.is_thumbnail,
 	}));
 
 	// sort by is_thumbnail - true first
-	images.sort((a, b) => (a.is_thumbnail ? -1 : 1));
+	images?.sort((a, b) => (a.is_thumbnail ? -1 : 1));
 
 	// TODO: add more metadata + image - thumbnail or first picture
 	return {
@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: { params: { projectId: string
 			title: `${project.name} | TUES Fest 2023`,
 			description: project.description,
 			creator: '@tuesfest',
-			images: images.map((image) => ({
+			images: images?.map((image) => ({
 				url: image.url,
 			})),
 		},
@@ -79,7 +79,7 @@ export async function generateMetadata({ params }: { params: { projectId: string
 			description: project.description,
 			url: `https://tuesfest.bg/projects/${project.id}`,
 			siteName: 'TUES Fest 2023',
-			images: images.map((image) => ({
+			images: images?.map((image) => ({
 				url: image.url,
 			})),
 			locale: 'bg-BG',
