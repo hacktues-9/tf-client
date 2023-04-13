@@ -2,11 +2,15 @@ import { TYPE } from '@/constants/projects/TYPE';
 import { CATEGORY } from '@/constants/projects/CATEGORY';
 
 import Video from './Video';
+import { TbShare } from 'react-icons/tb';
+import ShareButton from '@/components/shareButton';
 
 const MainInfo = ({ name, video, type, category }: { name: string; video: string; type: string; category: string }) => (
 	<div className="w-full flex gap-4 max-w-screen-lg">
 		<div className="shrink w-full bg-bg-color rounded-xl border-2 border-border">
-			<div className="aspect-video overflow-hidden rounded-xl border-b-2 border-b-border">
+			<div className="relative aspect-video overflow-hidden rounded-xl border-b-2 border-b-border">
+				{/* Share Button */}
+				<ShareButton />
 				<Video name={name} video={video} />
 			</div>
 			<div className="px-8 py-4 flex items-center justify-between">
