@@ -73,8 +73,7 @@ const ProjectPage = async ({ params }: { params: { projectId: string } }) => {
 	return (
 		<div className="">
 			{
-				// @ts-expect-error Server Component
-				<ProjectsPath path={path} />
+				// <ProjectsPath path={path} />
 			}
 			<div className="container">
 			</div>
