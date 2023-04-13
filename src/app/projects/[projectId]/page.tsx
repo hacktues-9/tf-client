@@ -53,7 +53,30 @@ const getProject = async (id: string) => {
 export async function generateMetadata({ params }: { params: { projectId: string } }) {
 	const project = await getProject(params.projectId);
 	// TODO: add more metadata + image - thumbnail or first picture
-	return { title: project.name };
+	return {
+		title: project.name,
+		description: project.description,
+		twitter: {
+			card: 'summary_large_image',
+			title: `${project.name} | TUES Fest 2023`,
+			description: project.description,
+			creator: '@tuesfest',
+			images: project.pictures.map((picture) => ({
+				url: picture.url,
+			})),
+		},
+		openGraph: {
+			title: `${project.name} | TUES Fest 2023`,
+			description: project.description,
+			url: `https://tuesfest.bg/projects/${project.id}`,
+			siteName: 'TUES Fest 2023',
+			images: project.pictures.map((picture) => ({
+				url: picture.url,
+			})),
+			locale: 'bg-BG',
+			type: 'website',
+		},
+	};
 }
 
 const ProjectPage = async ({ params }: { params: { projectId: string } }) => {
