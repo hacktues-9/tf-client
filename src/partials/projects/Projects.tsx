@@ -63,7 +63,9 @@ const Projects = async () => {
 									Виж проекта {/* TODO: change to vode, on 23 april */}
 								</Link>
 								<Link
-									href={'project.video'}
+									href={project.video}
+									target="_blank"
+									rel="noopener noreferrer"
 									className="flex items-center justify-center rounded-md text-sm font-semibold text-white hover:text-primary sm:px-5"
 								>
 									<TbBrandYoutube size={32} />
