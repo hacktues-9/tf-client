@@ -37,7 +37,7 @@ export type Project = {
 };
 
 const getProject = async (id: string) => {
-	const res = await fetch(`https://api.tuesfest.bg/v1/get/project/${id}`);
+	const res = await fetch(`https://api.tuesfest.bg/v1/get/project/${id}`, { next: { revalidate: 10 } });
 
 	if (!res.ok) {
 		// This will activate the closest `error.js` Error Boundary

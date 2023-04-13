@@ -20,7 +20,7 @@ const getProjects = async (category: string): Promise<Project[]> => {
 	const url = `https://api.tuesfest.bg/v1/get/projects${category === 'all' ? '' : '/' + category}`;
 	console.warn(url);
 
-	const res = await fetch(url);
+	const res = await fetch(url, { next: { revalidate: 10 } });
 
 	if (!res.ok) {
 		// This will activate the closest `error.js` Error Boundary
