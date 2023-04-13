@@ -17,7 +17,7 @@ const ProjectsPath = ({
 	if (!path) return null;
 
 	return (
-		<section className="pt-[150px]">
+		<section className="pt-28">
 			<div className="container">
 				<div className="rounded-lg border-2 border-stroke bg-bg-color py-5 px-8">
 					<ul className="flex items-cente text-ellipsis  flex-wrap gap-3">
