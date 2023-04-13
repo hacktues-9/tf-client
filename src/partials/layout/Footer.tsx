@@ -115,6 +115,14 @@ const TUESFest = () => (
 						Спонсори
 					</a>
 				</li>
+				<li>
+					<Link
+						href="https://youtube.tuesfest.bg"
+						className="mb-4 inline-block text-base font-medium text-body-color transition hover:text-white"
+					>
+						YouTube класация
+					</Link>
+				</li>
 			</ul>
 		</div>
 	</div>
