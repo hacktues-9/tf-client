@@ -21,7 +21,17 @@ async function getProjects(category: string) {
 
 	if (!res.ok) {
 		// This will activate the closest `error.js` Error Boundary
-		throw new Error('Failed to fetch data');
+		throw new Error('Failed to fetch data', {
+			cause: {
+				status: res.status,
+				statusText: res.statusText,
+				url: res.url,
+				debug: {
+					url: url,
+					category: category,
+				}
+			}
+		});
 	}
 
 	const projects: Project[] = await res.json();
