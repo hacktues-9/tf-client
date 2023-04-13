@@ -14,14 +14,13 @@ const ProjectsPath = ({
 		| null
 		| undefined;
 }) => {
-
 	if (!path) return null;
 
 	return (
 		<section className="pt-[150px]">
 			<div className="container">
 				<div className="rounded-lg border-2 border-stroke bg-bg-color py-5 px-8">
-					<ul className="flex items-center">
+					<ul className="flex items-cente text-ellipsis  flex-wrap gap-3">
 						{path.map((item) => (
 							<>
 								{item?.url ? (
@@ -31,11 +30,9 @@ const ProjectsPath = ({
 											href={item?.url || '#'}
 											className={`text-white ${item?.url && 'hover:text-primary'}`}
 										>
-											<li
-												className="flex items-center text-base font-medium text-white"
-											>
+											<li className="flex items-center text-base font-medium text-white">
 												{item?.name}
-												<span className="px-3"> / </span>
+												<span className="pl-3"> / </span>
 											</li>
 										</Link>
 									</>
