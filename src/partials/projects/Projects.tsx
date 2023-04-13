@@ -1,3 +1,5 @@
+'use server';
+
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -20,7 +22,7 @@ async function getProjects() {
 	}
 
 	const projects: Project[] = await res.json();
-	console.warn(projects);
+	// console.warn(projects);
 
 	return projects;
 }
@@ -35,7 +37,7 @@ const Projects = async () => {
 			{projects.map((project) => (
 				<div className="shrink-0 w-full px-4 md:w-1/2 lg:w-1/3 2xl:w-1/4" key={project.name}>
 					<div className="mb-10 rounded-xl border border-stroke bg-bg-color p-[18px]">
-						<div className="relative mb-5 overflow-hidden rounded-lg">
+						<div className="aspect-video relative mb-5 overflow-hidden rounded-lg">
 							<Image
 								src={project.thumbnail}
 								alt={project.name}
