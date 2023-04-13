@@ -1,16 +1,29 @@
 'use client';
 
 import Link from 'next/link';
+import { use, useEffect } from 'react';
 
-const ProjectsPath = async ({
+const ProjectsPath = ({
 	path,
 }: {
-	path: {
-		name: string;
-		url: string;
-	}[];
+	path:
+		| {
+				name: string;
+				url: string;
+		  }[]
+		| null
+		| undefined;
 }) => {
-	// if (!path) return null;
+	useEffect(() => {
+		console.warn('INIT path', path);
+	}, []);
+
+	useEffect(() => {
+		// delay the update to avoid flickering
+		console.warn('UPDATE path', path);
+	}, [path]);
+
+	if (!path) return null;
 
 	return (
 		<section className="pt-[150px]">
@@ -18,21 +31,28 @@ const ProjectsPath = async ({
 				<div className="rounded-lg border-2 border-stroke bg-bg-color py-5 px-8">
 					<ul className="flex items-center">
 						{path.map((item) => (
-							<li key={item.url} className="flex items-center text-base font-medium text-white">
-								{item.url ? (
+							<>
+								{item?.url ? (
 									<>
 										<Link
-											href={item.url || '#'}
-											className={`text-white ${item.url && 'hover:text-primary'}`}
+											key={item?.url}
+											href={item?.url || '#'}
+											className={`text-white ${item?.url && 'hover:text-primary'}`}
 										>
-											{item.name}
+											<li
+												className="flex items-center text-base font-medium text-white"
+											>
+												{item?.name}
+												<span className="px-3"> / </span>
+											</li>
 										</Link>
-										<span className="px-3"> / </span>
 									</>
 								) : (
-									<li className="flex items-center text-base font-medium text-white">Проекти</li>
+									<li key={'end'} className="flex items-center text-base font-medium text-white">
+										{item?.name}
+									</li>
 								)}
-							</li>
+							</>
 						))}
 					</ul>
 				</div>

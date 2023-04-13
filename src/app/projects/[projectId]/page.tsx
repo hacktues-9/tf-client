@@ -38,7 +38,7 @@ const getProject = async (id: string) => {
 	}
 
 	const project: Project = await res.json();
-	console.warn(project);
+	// console.warn(project);
 
 	return project;
 };
@@ -52,10 +52,8 @@ export async function generateMetadata({ params }: { params: { projectId: string
 const ProjectPage = async ({ params }: { params: { projectId: string } }) => {
 	const project = await getProject(params.projectId);
 	console.warn('AAAAAA', project.name);
-	const path: {
-		name: string;
-		url: string;
-	}[] = [
+
+	const path = [
 		{
 			name: 'TUES Fest 2023',
 			url: '/',
@@ -72,11 +70,12 @@ const ProjectPage = async ({ params }: { params: { projectId: string } }) => {
 
 	return (
 		<div className="">
-			{
-				// <ProjectsPath path={path} />
-			}
-			<div className="container">
-			</div>
+			<Suspense fallback={<div>Loading...</div>}>
+				{/*  */}
+				<ProjectsPath path={path} />
+			</Suspense>
+
+			<div className="container"></div>
 		</div>
 	);
 };
