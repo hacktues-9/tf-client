@@ -52,7 +52,7 @@ export const metadata = {
 const ApplyPage = () => (
 	<div className="max-w-screen-2xl min-h-screen m-auto pt-28">
 		<div className="">
-			<div className="p-8 md:p-12 pt-0">
+			<div className="p-8 md:p-12 !pt-0">
 				<div className="p-8 sm:p-10 rounded-xl bg-bg-color border border-stroke flex flex-col gap-4">
 					<h2 className="bg-gradient text-transparent font-black text-3xl sm:text-5xl bg-clip-text">
 						Защо ТУЕС?

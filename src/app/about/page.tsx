@@ -40,7 +40,7 @@ export const metadata = {
 
 const AboutPage = () => {
 	return (
-		<div className="max-w-screen-2xl min-h-screen m-auto p-8 md:p-12 pt-28">
+		<div className="max-w-screen-2xl min-h-screen m-auto p-8 md:p-12 !pt-28">
 			<div>
 				<div className="pt-8 md:pt-12 flex flex-col lg:flex-row items-center gap-8">
 					<div className="flex flex-col gap-4">
