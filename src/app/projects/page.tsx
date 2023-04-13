@@ -4,25 +4,24 @@ import { Suspense } from 'react';
 
 import Projects from '@/partials/projects/Projects';
 import ProjectsLoading from '@/partials/projects/loader/ProjectsLoading';
+import ProjectsPath from '@/partials/layout/ProjectsPath';
+
+const PATH = [
+	{
+		name: 'TUES Fest 2023',
+		url: '/',
+	},
+	{
+		name: 'Проекти',
+		url: '',
+	},
+];
 
 const ProjectsPage = () => {
 	return (
 		<div className="">
-			<section className="pt-[150px]">
-				<div className="container">
-					<div className="rounded-lg border-2 border-stroke bg-bg-color py-5 px-8">
-						<ul className="flex items-center">
-							<li className="flex items-center text-base font-medium text-white">
-								<Link href="/" className="text-white hover:text-primary">
-									TUES Fest 2023
-								</Link>
-								<span className="px-3"> / </span>
-							</li>
-							<li className="flex items-center text-base font-medium text-white">Проекти</li>
-						</ul>
-					</div>
-				</div>
-			</section>
+			{/* @ts-expect-error Server Component */}
+			<ProjectsPath path={PATH} />
 			<div className="container">
 				<section className="-mx-4 pt-8">
 					<div className="container">

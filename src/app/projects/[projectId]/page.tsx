@@ -1,3 +1,6 @@
+import ProjectsPath from '@/partials/layout/ProjectsPath';
+import { Suspense } from 'react';
+
 export type Links = {
 	github: string;
 	demo: string;
@@ -40,22 +43,43 @@ const getProject = async (id: string) => {
 	return project;
 };
 
-export async function generateMetadata({
-	params,
-	searchParams,
-}: {
-	params: { projectId: string };
-	searchParams: URLSearchParams;
-}) {
+export async function generateMetadata({ params }: { params: { projectId: string } }) {
 	const project = await getProject(params.projectId);
 	// TODO: add more metadata + image - thumbnail or first picture
 	return { title: project.name };
 }
 
-const ProjectPage = () => {
-	<div>
-		<h1>Project Page</h1>
-	</div>;
+const ProjectPage = async ({ params }: { params: { projectId: string } }) => {
+	const project = await getProject(params.projectId);
+	console.warn('AAAAAA', project.name);
+	const path: {
+		name: string;
+		url: string;
+	}[] = [
+		{
+			name: 'TUES Fest 2023',
+			url: '/',
+		},
+		{
+			name: 'Проекти',
+			url: '/projects',
+		},
+		{
+			name: project.name,
+			url: '',
+		},
+	];
+
+	return (
+		<div className="">
+			{
+				// @ts-expect-error Server Component
+				<ProjectsPath path={path} />
+			}
+			<div className="container">
+			</div>
+		</div>
+	);
 };
 
 export default ProjectPage;
