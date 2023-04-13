@@ -52,6 +52,15 @@ const getProject = async (id: string) => {
 
 export async function generateMetadata({ params }: { params: { projectId: string } }) {
 	const project = await getProject(params.projectId);
+
+	const images = project.pictures.map((picture) => ({
+		url: picture.url,
+		is_thumbnail: picture.is_thumbnail,
+	}));
+
+	// sort by is_thumbnail - true first
+	images.sort((a, b) => (a.is_thumbnail ? -1 : 1));
+
 	// TODO: add more metadata + image - thumbnail or first picture
 	return {
 		title: project.name,
@@ -61,8 +70,8 @@ export async function generateMetadata({ params }: { params: { projectId: string
 			title: `${project.name} | TUES Fest 2023`,
 			description: project.description,
 			creator: '@tuesfest',
-			images: project.pictures.map((picture) => ({
-				url: picture.url,
+			images: images.map((image) => ({
+				url: image.url,
 			})),
 		},
 		openGraph: {
@@ -70,8 +79,8 @@ export async function generateMetadata({ params }: { params: { projectId: string
 			description: project.description,
 			url: `https://tuesfest.bg/projects/${project.id}`,
 			siteName: 'TUES Fest 2023',
-			images: project.pictures.map((picture) => ({
-				url: picture.url,
+			images: images.map((image) => ({
+				url: image.url,
 			})),
 			locale: 'bg-BG',
 			type: 'website',
