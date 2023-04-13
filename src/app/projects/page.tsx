@@ -4,26 +4,26 @@ import { Suspense } from 'react';
 
 import Projects from '@/partials/projects/Projects';
 import ProjectsLoading from '@/partials/projects/loader/ProjectsLoading';
-// import ProjectsPath from '@/partials/layout/ProjectsPath';
+import ProjectsPath from '@/partials/layout/ProjectsPath';
+
+const PATH: {
+	name: string;
+	url: string;
+}[] = [
+	{
+		name: 'TUES Fest 2023',
+		url: '/',
+	},
+	{
+		name: 'Проекти',
+		url: '',
+	},
+];
 
 const ProjectsPage = () => {
 	return (
 		<div className="">
-			<section className="pt-[150px]">
-				<div className="container">
-					<div className="rounded-lg border-2 border-stroke bg-bg-color py-5 px-8">
-						<ul className="flex items-center">
-							<Link href={'/'} className={`text-white hover:text-primary`}>
-								<li className="flex items-center text-base font-medium text-white">
-									TUES Fest 2023
-									<span className="px-3"> / </span>
-								</li>
-							</Link>
-							<li className="flex items-center text-base font-medium text-white">Проекти</li>
-						</ul>
-					</div>
-				</div>
-			</section>
+			<ProjectsPath path={PATH} />
 			<div className="container">
 				<section className="-mx-4 pt-8">
 					<div className="container">

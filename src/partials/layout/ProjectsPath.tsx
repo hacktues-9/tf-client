@@ -14,14 +14,6 @@ const ProjectsPath = ({
 		| null
 		| undefined;
 }) => {
-	useEffect(() => {
-		console.warn('INIT path', path);
-	}, []);
-
-	useEffect(() => {
-		// delay the update to avoid flickering
-		console.warn('UPDATE path', path);
-	}, [path]);
 
 	if (!path) return null;
 
