@@ -14,13 +14,13 @@ export interface Project {
 	category: string;
 }
 
-async function getProjects(category: string) {
+const getProjects = async (category: string): Promise<Project[]> => {
 	if (!['software', 'embedded', 'battlebot', 'networks', 'all'].includes(category)) redirect('/projects');
 
-	const url = `https://api.tuesfest.bg/v1/get/projects/${category === 'all' ? '' : category}`;
-	console.warn(url)
+	const url = `https://api.tuesfest.bg/v1/get/projects${category === 'all' ? '' : '/' + category}`;
+	console.warn(url);
 
-	const res = await fetch(url /* { cache: 'no-store' } */);
+	const res = await fetch(url);
 
 	if (!res.ok) {
 		// This will activate the closest `error.js` Error Boundary
@@ -38,10 +38,9 @@ async function getProjects(category: string) {
 	}
 
 	const projects: Project[] = await res.json();
-	// console.warn(projects);
 
 	return projects;
-}
+};
 
 const Projects = async ({ category }: { category: string }) => {
 	const projects: Project[] = await getProjects(category);
