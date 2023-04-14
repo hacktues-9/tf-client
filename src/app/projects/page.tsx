@@ -34,7 +34,7 @@ const TABS = [
 	},
 	{
 		text: 'Battle Bots',
-		href: '/projects/category/battle-bots',
+		href: '/projects/category/battlebot',
 	},
 	{
 		text: 'Мрежи',
