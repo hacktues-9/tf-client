@@ -77,17 +77,17 @@ const GalleryModal = ({
 			}, 500);
 		};
 
-		const handleTouch = (e: TouchEvent) => {
-			e.preventDefault();
+		// const handleTouch = (e: TouchEvent) => {
+		// 	e.preventDefault();
 
-			setTimeout(() => {
-				if (e.touches[0].clientX < e.touches[1].clientX) {
-					next();
-				} else {
-					prev();
-				}
-			}, 500);
-		};
+		// 	setTimeout(() => {
+		// 		if (e.touches[0].clientX < e.touches[1].clientX) {
+		// 			next();
+		// 		} else {
+		// 			prev();
+		// 		}
+		// 	}, 500);
+		// };
 
 		const handleOutsideClick = (e: MouseEvent) => {
 			if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
@@ -97,13 +97,13 @@ const GalleryModal = ({
 
 		document.addEventListener('keydown', handleKeyDown);
 		document.addEventListener('wheel', handleWheel);
-		modalRef.current?.addEventListener('touchstart', handleTouch);
+		// modalRef.current?.addEventListener('touchstart', handleTouch);
 		document.addEventListener('click', handleOutsideClick);
 
 		return () => {
 			document.removeEventListener('keydown', handleKeyDown);
 			document.removeEventListener('wheel', handleWheel);
-			modalRef.current?.removeEventListener('touchstart', handleTouch);
+			// modalRef.current?.removeEventListener('touchstart', handleTouch);
 			document.removeEventListener('click', handleOutsideClick);
 		};
 	}, [closeModal, modalRef, next, prev]);
