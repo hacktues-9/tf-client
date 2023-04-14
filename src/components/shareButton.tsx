@@ -15,14 +15,18 @@ const ShareButton = (): JSX.Element => {
 		navigator?.clipboard.writeText(`${window.location.origin}${path}`);
 		setCopied(true);
 
-		navigator
-			?.share({
-				title: window.document.title,
-				text: window.document.title,
-				url: `${window.location.origin}${path}`,
-			})
-			.then(() => console.log('Successful share! 🎉'))
-			.catch((err) => console.error(err));
+		try {
+			navigator
+				?.share({
+					title: window.document.title,
+					text: window.document.title,
+					url: `${window.location.origin}${path}`,
+				})
+				.then(() => console.log('Successful share! 🎉'))
+				.catch((err) => console.error(err));
+		} catch (err) {
+			console.warn("Browser doesn't support native share");
+		}
 
 		setTimeout(() => setCopied(false), 2000);
 	};
