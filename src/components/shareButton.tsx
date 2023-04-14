@@ -8,10 +8,22 @@ const ShareButton = (): JSX.Element => {
 	const path = usePathname();
 
 	const [copied, setCopied] = useState(false);
+	const [pageURL, setPageURL] = useState('');
+	const [isNativeShare, setNativeShare] = useState(false);
 
 	const handleCopy = () => {
-		navigator.clipboard.writeText(`${window.location.origin}${path}`);
+		navigator?.clipboard.writeText(`${window.location.origin}${path}`);
 		setCopied(true);
+
+		navigator
+			?.share({
+				title: window.document.title,
+				text: window.document.title,
+				url: `${window.location.origin}${path}`,
+			})
+			.then(() => console.log('Successful share! 🎉'))
+			.catch((err) => console.error(err));
+
 		setTimeout(() => setCopied(false), 2000);
 	};
 
