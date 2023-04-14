@@ -16,7 +16,7 @@ const ShareButton = (): JSX.Element => {
 	};
 
 	return (
-		<div className="absolute top-0 right-0 p-4 z-[1001]">
+		<div className="absolute top-0 right-0 p-4 z-10">
 			<button
 				className="flex items-center gap-2 px-4 py-2 bg-bg-color rounded-xl border-2 border-border hover:bg-bg-color-hover"
 				onClick={handleCopy}

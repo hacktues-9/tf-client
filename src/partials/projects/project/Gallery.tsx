@@ -3,25 +3,155 @@
 import Image from 'next/image';
 
 import { Picture } from '@/app/projects/[projectId]/page';
-import { useState } from 'react';
-import { TbX } from 'react-icons/tb';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { TbChevronLeft, TbChevronRight, TbX } from 'react-icons/tb';
 
-const GalleryModal = ({ picture, closeModal }: { picture: Picture; closeModal: () => void }) => {
+const GalleryModal = ({
+	pictures,
+	startingIndex,
+	closeModal,
+}: {
+	pictures: Picture[];
+	startingIndex: number;
+	closeModal: () => void;
+}) => {
+	const [index, setIndex] = useState(startingIndex);
+	const modalRef = useRef<HTMLDivElement>(null);
+
+	const next = useCallback(() => {
+		if (index === pictures.length - 1) {
+			setIndex(0);
+		} else {
+			setIndex(index + 1);
+		}
+	}, [index, pictures.length]);
+
+	const prev = useCallback(() => {
+		if (index === 0) {
+			setIndex(pictures.length - 1);
+		} else {
+			setIndex(index - 1);
+		}
+	}, [index, pictures.length]);
+
+	useEffect(() => {
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if (e.key === 'Escape') {
+				closeModal();
+			}
+
+			if (e.key === 'ArrowRight') {
+				next();
+			}
+
+			if (e.key === 'ArrowLeft') {
+				prev();
+			}
+
+			if (e.key === ' ') {
+				e.preventDefault();
+			}
+
+			if (e.key === 'Enter') {
+				e.preventDefault();
+			}
+
+			if (e.key === 'Tab') {
+				e.preventDefault();
+			}
+
+			if (e.key === 'Backspace') {
+				e.preventDefault();
+			}
+		};
+
+		const handleWheel = (e: WheelEvent) => {
+			e.preventDefault();
+
+			setTimeout(() => {
+				if (e.deltaY > 0) {
+					next();
+				} else {
+					prev();
+				}
+			}, 500);
+		};
+
+		const handleTouch = (e: TouchEvent) => {
+			e.preventDefault();
+
+			setTimeout(() => {
+				if (e.touches[0].clientX < e.touches[1].clientX) {
+					next();
+				} else {
+					prev();
+				}
+			}, 500);
+		};
+
+		const handleOutsideClick = (e: MouseEvent) => {
+			if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
+				closeModal();
+			}
+		};
+
+		document.addEventListener('keydown', handleKeyDown);
+		document.addEventListener('wheel', handleWheel);
+		modalRef.current?.addEventListener('touchstart', handleTouch);
+		document.addEventListener('click', handleOutsideClick);
+
+		return () => {
+			document.removeEventListener('keydown', handleKeyDown);
+			document.removeEventListener('wheel', handleWheel);
+			modalRef.current?.removeEventListener('touchstart', handleTouch);
+			document.removeEventListener('click', handleOutsideClick);
+		};
+	}, [closeModal, modalRef, next, prev]);
+
 	return (
-		<div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center backdrop-blur-xl z-[100]">
-			<div className="relative h-3/4 w-3/4">
-				<div className="absolute top-0 right-0 p-4">
-					<button onClick={closeModal} className="absolute bg-bg-color rounded-full p-2 hover:bg-border transition-colors">
-						<TbX size={32} />
+		<div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-[1001] flex items-center justify-center backdrop-blur-md">
+			<div ref={modalRef} className="relative h-full w-full max-w-screen-lg">
+				<div className="absolute top-12 left-0 p-4 z-[1001]">
+					<button
+						className="flex items-center gap-2 px-4 py-2 bg-bg-color rounded-xl border-2 border-border hover:bg-bg-color-hover"
+						onClick={closeModal}
+					>
+						<TbX className="h-6 w-6" />
+						<span className="text-sm">Затвори</span>
 					</button>
 				</div>
-				<div className="h-full w-full flex items-center justify-center">
-					<Image
-						src={picture.url}
-						alt={'снимка на проект'}
-						fill
-						className="h-full w-full object-contain rounded-xl"
-					/>
+				<div className="absolute top-1/2 left-0 p-4 !pl-10 z-[1001]">
+					<button
+						className="flex items-center gap-2 px-4 py-2 bg-bg-color rounded-xl border-2 border-border hover:bg-border hover:border-stroke transition-all duration-300 ease-in-out"
+						onClick={prev}
+					>
+						<span className="text-sm">
+							<TbChevronLeft size={32} />
+						</span>
+					</button>
+				</div>
+				<div className="absolute top-1/2 right-0 p-4 pr-10 z-[1001]">
+					<button
+						className="flex items-center gap-2 px-4 py-2 bg-bg-color rounded-xl border-2 border-border hover:bg-border hover:border-stroke transition-all duration-300 ease-in-out"
+						onClick={next}
+					>
+						<span className="text-sm">
+							<TbChevronRight size={32} />
+						</span>
+					</button>
+				</div>
+				<div className="h-full">
+					<div className="h-full flex flex-col gap-4">
+						<div className="h-full flex p-4 gap-4 items-center justify-center">
+							<div className="h-full max-h-screen w-full shrink-0 overflow-hidden object-contain flex items-center justify-center">
+								<img
+									src={pictures[index]?.url}
+									alt={`снимка ${index + 1} на проект`}
+									className=" object-contain h-full rounded-xl"
+								/>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -30,16 +160,15 @@ const GalleryModal = ({ picture, closeModal }: { picture: Picture; closeModal: (
 
 const Gallery = ({ name, pictures }: { name: string; pictures: Picture[] }) => {
 	const [modal, setModal] = useState(false);
-	const [modalPicture, setModalPicture] = useState<Picture | null>(null);
+	const [index, setIndex] = useState(0);
 
 	const openModal = (picture: Picture) => {
+		setIndex(pictures.indexOf(picture));
 		setModal(true);
-		setModalPicture(picture);
 	};
 
 	const closeModal = () => {
 		setModal(false);
-		setModalPicture(null);
 	};
 
 	return (
@@ -67,7 +196,7 @@ const Gallery = ({ name, pictures }: { name: string; pictures: Picture[] }) => {
 					</div>
 				</div>
 			</div>
-			{modal && modalPicture && <GalleryModal picture={modalPicture} closeModal={closeModal} />}
+			{modal && <GalleryModal pictures={pictures} startingIndex={index} closeModal={closeModal} />}
 		</>
 	);
 };
