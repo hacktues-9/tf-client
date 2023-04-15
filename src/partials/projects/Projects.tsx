@@ -43,6 +43,8 @@ const getProjects = async (category: string): Promise<Project[]> => {
 };
 
 const Projects = async ({ category }: { category: string }) => {
+	if (!['software', 'embedded', 'battlebot', 'networks', 'all'].includes(category)) redirect('/projects');
+
 	const projects: Project[] = await getProjects(category);
 
 	if (!projects || !projects?.length) return null;
