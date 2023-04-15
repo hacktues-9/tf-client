@@ -7,6 +7,8 @@ import Gallery from '@/partials/projects/project/Gallery';
 import Description from '@/partials/projects/project/Description';
 import LinksContainer from '@/partials/projects/project/Links';
 import Creators from '@/partials/projects/project/Creators';
+import Link from 'next/link';
+import { TbChevronLeft, TbChevronRight } from 'react-icons/tb';
 
 export type Links = {
 	github: string;
@@ -34,6 +36,8 @@ export type Project = {
 	links: Links;
 	creators: Creator[];
 	pictures: Picture[];
+	next_id: number;
+	prev_id: number;
 };
 
 const getProject = async (id: string) => {
@@ -120,6 +124,28 @@ const ProjectPage = async ({ params }: { params: { projectId: string } }) => {
 				<Description {...project} />
 				<LinksContainer {...project} />
 				<Creators {...project} />
+			</div>
+			<div className="w-screen fixed z-10 bottom-5 right-0">
+				<div className="relative container">
+					<div className="absolute bottom-0 right-4 flex items-center justify-center gap-4">
+						{project.prev_id !== undefined && project.prev_id !== 0 && (
+							<Link
+								href={`/projects/${project.prev_id}`}
+								className="bg-bg-color border border-border p-2 rounded-xl hover:bg-border hover:border-stroke bg-opacity-75  backdrop-blur-md"
+							>
+								<TbChevronLeft size={32} />
+							</Link>
+						)}
+						{project.next_id !== undefined && project.next_id !== 0 && (
+							<Link
+								href={`/projects/${project.next_id}`}
+								className="bg-bg-color border border-border p-2 rounded-xl hover:bg-border hover:border-stroke bg-opacity-75 backdrop-blur-md"
+							>
+								<TbChevronRight size={32} />
+							</Link>
+						)}
+					</div>
+				</div>
 			</div>
 		</div>
 	);
