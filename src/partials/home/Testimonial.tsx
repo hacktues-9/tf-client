@@ -13,7 +13,12 @@ const Testimonial = () => {
 	const handlePrev = () => {
 		if (currentTestimonial === null) return;
 
-		setCurrentTestimonial(Math.abs(currentTestimonial - 1) % TESTIMONIALS.length);
+		// check if currentTestimonial is at the first position
+		if (currentTestimonial === 0) {
+			setCurrentTestimonial(TESTIMONIALS.length - 1); // set to last element
+		} else {
+			setCurrentTestimonial(Math.abs(currentTestimonial - 1) % TESTIMONIALS.length);
+		}
 	};
 
 	const handleNext = () => {

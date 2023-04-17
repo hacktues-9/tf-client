@@ -1,5 +1,6 @@
-import { SPONSORS } from '@/constants/home/sponsors';
 import SponsorGroup from './sponsors/SponsorGroup';
+
+import { SPONSORS } from '@/constants/home/sponsors';
 
 const Sponsors = () => (
 	<section id="sponsors" className="p-8 md:p-12">

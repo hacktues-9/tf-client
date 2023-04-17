@@ -1,5 +1,5 @@
 const TUESTalksPage = () => (
-	<div className="min-h-screen relative flex items-center justify-center">
+	<div className="min-h-screen relative flex items-center justify-center !pt-28">
 		<div className="w-full h-full flex items-center justify-center relative">
 			<iframe
 				id="embedPlayer"
