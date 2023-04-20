@@ -253,8 +253,8 @@ const VotingOverlay = ({ showModal }: { showModal: () => void }) => {
 							}`}
 						>
 							<div className="w-full flex flex-col divide-y divide-stroke">
-								<VotingCategory category={software} cat='software' error={softwareError} />
 								<VotingCategory category={embedded} cat="embedded" error={embeddedError} />
+								<VotingCategory category={software} cat="software" error={softwareError} />
 								<VotingCategory category={battlebot} cat="battlebot" error={battlebotError} />
 								<VotingCategory category={networks} cat="networks" error={networksError} />
 							</div>
