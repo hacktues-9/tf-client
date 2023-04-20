@@ -33,6 +33,7 @@ module.exports = {
 			yellow: '#FBB040',
 			'body-color': '#A1A0AE',
 			gradient: 'linear-gradient(158.44deg, #68CBE9 7.17%, #7775B4 52.72%, #7B51A1 91.26%)',
+			error: '#FF0000',
 		},
 		extend: {
 			backgroundImage: (theme) => ({
