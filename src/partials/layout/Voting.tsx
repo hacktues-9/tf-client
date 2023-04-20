@@ -167,7 +167,7 @@ const VotingCategory = ({ category, cat, error }: { category: Vote | null; cat: 
 				</div>
 				<Link
 					className="p-2 text-sm font-medium opacity-75 hover:opacity-100 duration-300 transition-all"
-					href={`/projects/voting/${cat}`}
+					href={`/projects/category/${cat}`}
 				>
 					{'<избери>'}
 				</Link>
