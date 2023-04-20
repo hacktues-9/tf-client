@@ -18,7 +18,7 @@ const Verify = ({
 	useEffect(() => {
 		if (token) {
 			fetch(`https://api.tuesfest.bg/v1/update/verify_vote`, {
-				method: 'UPDATE',
+				method: 'PUT',
 				headers: {
 					'Content-Type': 'application/json',
 				},

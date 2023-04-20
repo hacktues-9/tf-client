@@ -198,6 +198,10 @@ const VoteProvider = ({ children }: { children: React.ReactNode }) => {
 
 					if (data.msg === 'Successfully voted') {
 						setVotingError('');
+						setBattlebot(null);
+						setEmbedded(null);
+						setNetworks(null);
+						setSoftware(null);
 						localStorage?.clear();
 					}
 
