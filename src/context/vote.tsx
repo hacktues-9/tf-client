@@ -1,9 +1,12 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+'use client';
 
-interface Vote {
+import { createContext, useContext, useState, useEffect, useMemo } from 'react';
+
+export interface Vote {
 	id: number;
 	name: string;
 	image?: string; // not sure if we need this
+	category?: string;
 }
 
 const VoteContext = createContext(
@@ -13,19 +16,23 @@ const VoteContext = createContext(
 		removeVote: (category: string) => void;
 		getVotes: () => {
 			software: Vote | null;
-			hardware: Vote | null;
+			embedded: Vote | null;
 			battlebot: Vote | null;
 			networks: Vote | null;
 		};
+		anyVotes: () => boolean;
 		getErrors: () => {
 			softwareError: boolean;
-			hardwareError: boolean;
+			embeddedError: boolean;
 			battlebotError: boolean;
 			networksError: boolean;
 			emailError: boolean;
 			nameError: boolean;
-			votingError: boolean;
+			votingError: string;
 		};
+		validateVote: () => boolean;
+		validateInfo: () => boolean;
+		validateGivenInfo: (name: string, email: string) => boolean;
 		submitVote: () => boolean;
 	}
 );
@@ -34,12 +41,12 @@ const { Provider } = VoteContext;
 
 const VoteProvider = ({ children }: { children: React.ReactNode }) => {
 	const [software, setSoftware] = useState<Vote | null>(null);
-	const [hardware, setHardware] = useState<Vote | null>(null);
+	const [embedded, setEmbedded] = useState<Vote | null>(null);
 	const [battlebot, setBattlebot] = useState<Vote | null>(null);
 	const [networks, setNetworks] = useState<Vote | null>(null);
 
 	const [softwareError, setSoftwareError] = useState(false);
-	const [hardwareError, setHardwareError] = useState(false);
+	const [embeddedError, setEmbeddedError] = useState(false);
 	const [battlebotError, setBattlebotError] = useState(false);
 	const [networksError, setNetworksError] = useState(false);
 
@@ -49,23 +56,27 @@ const VoteProvider = ({ children }: { children: React.ReactNode }) => {
 	const [emailError, setEmailError] = useState(false);
 	const [nameError, setNameError] = useState(false);
 
-	const [votingError, setVotingError] = useState(false);
+	const [votingError, setVotingError] = useState('');
 
 	const addVote = (category: string, id: number, name: string, image?: string) => {
-		const value = { id, name, image };
+		const value = { id, name, image, category };
 
 		switch (category) {
 			case 'software':
 				setSoftware(value);
+				setSoftwareError(false);
 				break;
-			case 'hardware':
-				setHardware(value);
+			case 'embedded':
+				setEmbedded(value);
+				setEmbeddedError(false);
 				break;
 			case 'battlebot':
 				setBattlebot(value);
+				setBattlebotError(false);
 				break;
 			case 'networks':
 				setNetworks(value);
+				setNetworksError(false);
 				break;
 			default:
 				break;
@@ -82,8 +93,8 @@ const VoteProvider = ({ children }: { children: React.ReactNode }) => {
 			case 'software':
 				setSoftware(null);
 				break;
-			case 'hardware':
-				setHardware(null);
+			case 'embedded':
+				setEmbedded(null);
 				break;
 			case 'battlebot':
 				setBattlebot(null);
@@ -99,7 +110,7 @@ const VoteProvider = ({ children }: { children: React.ReactNode }) => {
 	const getVotes = () => {
 		return {
 			software,
-			hardware,
+			embedded,
 			battlebot,
 			networks,
 		};
@@ -108,7 +119,7 @@ const VoteProvider = ({ children }: { children: React.ReactNode }) => {
 	const getErrors = () => {
 		return {
 			softwareError,
-			hardwareError,
+			embeddedError,
 			battlebotError,
 			networksError,
 			emailError,
@@ -117,16 +128,17 @@ const VoteProvider = ({ children }: { children: React.ReactNode }) => {
 		};
 	};
 
+	const anyVotes = () => {
+		return software !== null || embedded !== null || battlebot !== null || networks !== null;
+	};
+
 	const validateVote = () => {
 		setSoftwareError(software === null);
-		setHardwareError(hardware === null);
+		setEmbeddedError(embedded === null);
 		setBattlebotError(battlebot === null);
 		setNetworksError(networks === null);
 
-		if (software && hardware && battlebot && networks) {
-			// api check if category matches with projectId
-			// api check if user has already voted - session cookie check
-
+		if (software && embedded && battlebot && networks) {
 			return true;
 		}
 
@@ -146,15 +158,94 @@ const VoteProvider = ({ children }: { children: React.ReactNode }) => {
 		}
 	};
 
-	const submitVote = () => {
-		if (validateVote() && validateInfo()) {
-			// api call to submit vote
+	const validateGivenInfo = (name: string, email: string) => {
+		setEmailError(email === '');
+		setNameError(name === '');
+
+		const emailRegex = new RegExp(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
+
+		if (emailRegex.test(email) && name !== '') {
 			return true;
 		} else {
-			setVotingError(true);
 			return false;
 		}
 	};
+
+	const submitVote = () => {
+		if (validateVote() && validateInfo()) {
+			// api submit vote
+			console.log('submitting vote');
+			fetch('https://api.tuesfest.bg/v1/post/vote', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					software_id: software?.id,
+					embedded_id: embedded?.id,
+					battlebot_id: battlebot?.id,
+					networks_id: networks?.id,
+					name,
+					email,
+				}),
+			})
+				.then((response) => response.json())
+				.then((data) => {
+					console.log('Success:', data);
+					if (data.msg === 'Already voted') {
+						setVotingError('Вече сте гласували');
+					}
+
+					if (data.msg === 'Successfully voted') {
+						setVotingError('');
+						localStorage.clear();
+					}
+
+					return true;
+				})
+				.catch((error) => {
+					console.error('Error:', error);
+				});
+
+			return true;
+		} else {
+			setVotingError('Моля попълнете всички полета');
+			return false;
+		}
+	};
+
+	useEffect(() => {
+		console.warn(softwareError, embeddedError, battlebotError, networksError);
+	}, [softwareError, embeddedError, battlebotError, networksError]);
+
+	// save to local storage on change
+	useMemo(() => {
+		if (!anyVotes()) return; // TODO: Fix this, for removing last vote
+
+		localStorage.setItem('software', JSON.stringify(software));
+		localStorage.setItem('embedded', JSON.stringify(embedded));
+		localStorage.setItem('battlebot', JSON.stringify(battlebot));
+		localStorage.setItem('networks', JSON.stringify(networks));
+	}, [software, embedded, battlebot, networks]);
+
+	// load from local storage on mount
+	useMemo(() => {
+		const software = localStorage.getItem('software');
+		const embedded = localStorage.getItem('embedded');
+		const battlebot = localStorage.getItem('battlebot');
+		const networks = localStorage.getItem('networks');
+
+		console.log('LOADED FROM LOCAL STORAGE');
+		console.log(software);
+		console.log(embedded);
+		console.log(battlebot);
+		console.log(networks);
+
+		if (software) setSoftware(JSON.parse(software));
+		if (embedded) setEmbedded(JSON.parse(embedded));
+		if (battlebot) setBattlebot(JSON.parse(battlebot));
+		if (networks) setNetworks(JSON.parse(networks));
+	}, []);
 
 	return (
 		<Provider
@@ -164,6 +255,10 @@ const VoteProvider = ({ children }: { children: React.ReactNode }) => {
 				removeVote,
 				getVotes,
 				getErrors,
+				anyVotes,
+				validateVote,
+				validateInfo,
+				validateGivenInfo,
 				submitVote,
 			}}
 		>
