@@ -198,7 +198,7 @@ const VoteProvider = ({ children }: { children: React.ReactNode }) => {
 
 					if (data.msg === 'Successfully voted') {
 						setVotingError('');
-						localStorage.clear();
+						localStorage?.clear();
 					}
 
 					return true;
@@ -222,18 +222,18 @@ const VoteProvider = ({ children }: { children: React.ReactNode }) => {
 	useMemo(() => {
 		if (!anyVotes()) return; // TODO: Fix this, for removing last vote
 
-		localStorage.setItem('software', JSON.stringify(software));
-		localStorage.setItem('embedded', JSON.stringify(embedded));
-		localStorage.setItem('battlebot', JSON.stringify(battlebot));
-		localStorage.setItem('networks', JSON.stringify(networks));
+		localStorage?.setItem('software', JSON.stringify(software));
+		localStorage?.setItem('embedded', JSON.stringify(embedded));
+		localStorage?.setItem('battlebot', JSON.stringify(battlebot));
+		localStorage?.setItem('networks', JSON.stringify(networks));
 	}, [software, embedded, battlebot, networks]);
 
 	// load from local storage on mount
-	useMemo(() => {
-		const software = localStorage.getItem('software');
-		const embedded = localStorage.getItem('embedded');
-		const battlebot = localStorage.getItem('battlebot');
-		const networks = localStorage.getItem('networks');
+	useEffect(() => {
+		const software = localStorage?.getItem('software');
+		const embedded = localStorage?.getItem('embedded');
+		const battlebot = localStorage?.getItem('battlebot');
+		const networks = localStorage?.getItem('networks');
 
 		console.log('LOADED FROM LOCAL STORAGE');
 		console.log(software);
