@@ -3,7 +3,7 @@ export const TYPE: any = {
 	beta: 'Бета спонсори',
 	gamma: 'Гама спонсори',
 	partners: 'Партньори',
-	mediaPartners: 'Медия жури',
+	mediaPartners: 'Медии, които ни подкрепят',
 };
 
 export const SPONSORS = [
