@@ -196,18 +196,23 @@ const VoteProvider = ({ children }: { children: React.ReactNode }) => {
 						setVotingError('Вече сте гласували');
 					}
 
+					console.error(data.msg);
 					if (data.msg === 'Successfully voted') {
+						console.log('Successfully voted');
 						setVotingError('');
 						setBattlebot(null);
 						setEmbedded(null);
 						setNetworks(null);
 						setSoftware(null);
+						setEmail('');
+						setName('');
 						localStorage?.clear();
 					}
 
 					return true;
 				})
 				.catch((error) => {
+					setVotingError('Грешка при гласуването');
 					console.error('Error:', error);
 				});
 
