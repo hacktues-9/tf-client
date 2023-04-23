@@ -23,6 +23,10 @@ const LINKS = [
 		title: 'Програма',
 	},
 	{
+		href: '/projects',
+		title: 'Гласуване',
+	},
+	{
 		href: '/tuestalks',
 		title: 'TUES Talks',
 	},

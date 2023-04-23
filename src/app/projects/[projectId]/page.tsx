@@ -119,7 +119,14 @@ const ProjectPage = async ({ params }: { params: { projectId: string } }) => {
 			</Suspense>
 
 			<div className="container pt-8 flex flex-col gap-4 items-center">
-				<MainInfo {...project} />
+				<MainInfo
+					{...project}
+					thumbnail={
+						project.has_thumbnail
+							? project.pictures?.find((picture) => picture.is_thumbnail)?.url ?? project.pictures?.[0]?.url
+							: project.pictures?.[0]?.url
+					}
+				/>
 				<Gallery {...project} />
 				<Description {...project} />
 				<LinksContainer {...project} />

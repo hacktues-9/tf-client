@@ -19,6 +19,7 @@
 		"animate.css": "^4.1.1",
 		"eslint": "8.36.0",
 		"eslint-config-next": "^13.3.0",
+		"framer-motion": "^10.12.4",
 		"next": "^13.3.0",
 		"next-sitemap": "^4.0.6",
 		"prettier": "^2.8.4",

@@ -4,8 +4,23 @@ import { CATEGORY } from '@/constants/projects/CATEGORY';
 import Video from './Video';
 import { TbShare } from 'react-icons/tb';
 import ShareButton from '@/components/shareButton';
+import VoteButton from './VoteButton';
 
-const MainInfo = ({ name, video, type, category }: { name: string; video: string; type: string; category: string }) => (
+const MainInfo = ({
+	name,
+	video,
+	type,
+	category,
+	id,
+	thumbnail,
+}: {
+	name: string;
+	video: string;
+	type: string;
+	category: string;
+	id: number;
+	thumbnail: string;
+}) => (
 	<div className="w-full flex gap-4 max-w-screen-lg">
 		<div className="shrink w-full bg-bg-color rounded-xl border-2 border-border">
 			<div className="relative aspect-video overflow-hidden rounded-xl border-b-2 border-b-border">
@@ -15,8 +30,11 @@ const MainInfo = ({ name, video, type, category }: { name: string; video: string
 			</div>
 			<div className="px-8 py-4 flex items-center justify-between">
 				<h2 className="font-bold text-2xl">{name}</h2>
-				<div className="text-sm text-right opacity-70">
-					{TYPE[type]}, {CATEGORY[category]}
+				<div className="flex items-center gap-4">
+					<div className="text-sm text-right opacity-70">
+						{TYPE[type]}, {CATEGORY[category]}
+					</div>
+					<VoteButton id={id} name={name} thumbnail={thumbnail} category={category} />
 				</div>
 			</div>
 		</div>

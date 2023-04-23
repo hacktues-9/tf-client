@@ -7,6 +7,8 @@ import Navigation from '@/partials/layout/Navigation';
 
 import 'animate.css';
 import './globals.css';
+import VoteProvider from '@/context/vote';
+import VotingLayout from '@/partials/layout/Voting';
 
 export const metadata = {
 	title: {
@@ -119,7 +121,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			</head>
 			<body className="bg-black">
 				<Navigation />
-				{children}
+				<VoteProvider>
+					{children}
+					<VotingLayout />
+				</VoteProvider>
 				<Footer />
 				<Analytics />
 			</body>

@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Sputnik",
+        "thumbnail": "https://tuesfest.bg/happy/iskren.jpg",
+        "category": "EMBEDDED"
+    },
+    {
+        "id": 2,
+        "name": "Sputnik 2",
+        "thumbnail": "https://tuesfest.bg/happy/iskren.jpg",
+        "category": "EMBEDDED"
+    }
+]
