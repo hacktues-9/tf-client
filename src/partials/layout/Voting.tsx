@@ -160,18 +160,18 @@ const VotingCategory = ({ category, cat, error }: { category: Vote | null; cat: 
 
 	if (category === null) {
 		return (
-			<div className={`w-full flex items-center justify-between py-2 ${error ? '!text-error' : ''}`}>
+			<Link
+				href={`/projects/category/${cat}`}
+				className={`w-full flex items-center justify-between py-2 ${error ? '!text-error' : ''}`}
+			>
 				<div className="flex items-center gap-4">
 					<div className="w-12 h-12 bg-bg-color border border-border rounded-full flex items-center justify-center" />
 					<p className={`font-bold text-md line-clamp-1 ${error ? '!text-error' : ''}`}>{CATEGORY[cat]}</p>
 				</div>
-				<Link
-					className="p-2 text-sm font-medium opacity-75 hover:opacity-100 duration-300 transition-all"
-					href={`/projects/category/${cat}`}
-				>
+				<p className="p-2 text-sm font-medium opacity-75 hover:opacity-100 duration-300 transition-all">
 					{'<избери>'}
-				</Link>
-			</div>
+				</p>
+			</Link>
 		);
 	}
 

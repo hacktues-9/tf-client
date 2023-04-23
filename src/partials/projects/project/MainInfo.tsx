@@ -30,7 +30,7 @@ const MainInfo = ({
 			</div>
 			<div className="px-8 py-4 flex items-center justify-between">
 				<h2 className="font-bold text-2xl">{name}</h2>
-				<div className='flex items-center gap-4'>
+				<div className="flex items-center gap-4">
 					<div className="text-sm text-right opacity-70">
 						{TYPE[type]}, {CATEGORY[category]}
 					</div>
