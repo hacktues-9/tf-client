@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useVoteContext } from '@/context/vote';
 import VoteButton from './VoteButton';
+import { TbBrandYoutube } from 'react-icons/tb';
 
 const Project = ({
 	id,
@@ -42,13 +43,29 @@ const Project = ({
 					</h3>
 
 					<div className="flex items-center justify-between border-t-2 border-stroke pt-5">
-						<VoteButton id={id} name={name} thumbnail={thumbnail} category={category} />
-						<Link
+						{/* <VoteButton id={id} name={name} thumbnail={thumbnail} category={category} /> */}
+						{/* <Link
 							href={`/projects/${id}`}
 							className="flex items-center justify-center rounded-md text-sm font-semibold text-white hover:text-primary sm:px-5"
 						>
 							виж проекта
+						</Link> */}
+						<Link
+							href={`/projects/${id}`}
+							className="flex items-center justify-center rounded-md bg-primary py-3 px-4 text-sm font-semibold text-white transition-all hover:bg-opacity-90 sm:px-5"
+						>
+							Виж проекта
 						</Link>
+						{video && (
+							<Link
+								href={video}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="flex items-center justify-center rounded-md text-sm font-semibold text-white hover:text-primary sm:px-5"
+							>
+								<TbBrandYoutube size={32} />
+							</Link>
+						)}
 					</div>
 				</div>
 			</div>
