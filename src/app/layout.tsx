@@ -121,10 +121,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			</head>
 			<body className="bg-black">
 				<Navigation />
-				<VoteProvider>
+				{/* <VoteProvider> */}
 					{children}
-					<VotingLayout />
-				</VoteProvider>
+					{/* <VotingLayout /> */}
+				{/* </VoteProvider> */}
 				<Footer />
 				<Analytics />
 			</body>

@@ -4,7 +4,7 @@ import { CATEGORY } from '@/constants/projects/CATEGORY';
 import Video from './Video';
 import { TbShare } from 'react-icons/tb';
 import ShareButton from '@/components/shareButton';
-import VoteButton from './VoteButton';
+// import VoteButton from './VoteButton';
 
 const MainInfo = ({
 	name,
@@ -34,7 +34,7 @@ const MainInfo = ({
 					<div className="text-sm text-right opacity-70">
 						{TYPE[type]}, {CATEGORY[category]}
 					</div>
-					<VoteButton id={id} name={name} thumbnail={thumbnail} category={category} />
+					{/* <VoteButton id={id} name={name} thumbnail={thumbnail} category={category} /> */}
 				</div>
 			</div>
 		</div>
