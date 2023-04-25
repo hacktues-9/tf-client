@@ -1,0 +1,46 @@
+[{
+    "id": 435,
+    "name": "TNR-12",
+    "thumbnail": "/assets/projects/TNR-12/images/image1.webp",
+    "video": "https://www.youtube.com/watch?v=eWQDGko9wck"
+}, {
+    "id": 433,
+    "name": "Minotaur",
+    "thumbnail": "/assets/projects/Minotaur/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=XfIfKMzpLnw"
+}, {
+    "id": 425,
+    "name": "Ежко Бежко",
+    "thumbnail": "/assets/projects/Ежко Бежко/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=Hoy-u7-3zhQ"
+}, {
+    "id": 421,
+    "name": "Axerman",
+    "thumbnail": "/assets/projects/Axerman/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=c7sL0yDaCV4"
+}, {
+    "id": 364,
+    "name": "Fleeze",
+    "thumbnail": "/assets/projects/Fleeze/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=JayPm4iU3VY"
+}, {
+    "id": 359,
+    "name": "Dread",
+    "thumbnail": "/assets/projects/Dread/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=dj-ZJnh14c4"
+}, {
+    "id": 354,
+    "name": "bobcat",
+    "thumbnail": "/assets/projects/bobcat/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=PYjiiogs7AQ"
+}, {
+    "id": 348,
+    "name": "Battlebot",
+    "thumbnail": "/assets/projects/Battlebot/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=vAfEAITOZvo"
+}, {
+    "id": 336,
+    "name": "CSR",
+    "thumbnail": "/assets/projects/CSR/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=5w_i3kPzGXI"
+}]

@@ -1,0 +1,41 @@
+[{
+    "id": 399,
+    "name": "TtT IoT Firewall",
+    "thumbnail": "/assets/projects/TtT IoT Firewall/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=lor523D3n40"
+}, {
+    "id": 357,
+    "name": "Пухкаво Облаче",
+    "thumbnail": "/assets/projects/Пухкаво Облаче/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=X2tb2ujxRlQ"
+}, {
+    "id": 347,
+    "name": "VPN Types",
+    "thumbnail": "/assets/projects/VPN Types/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=ag4QujML7Tg"
+}, {
+    "id": 345,
+    "name": "Изграждане на корпоративна мрежа посредством защитни стени Fortigate",
+    "thumbnail": "/assets/projects/Изграждане на корпоративна мрежа посредством защитни стени Fortigate/images/image0.webp",
+    "video": ""
+}, {
+    "id": 337,
+    "name": "Облачния мониторинг на успешните компании",
+    "thumbnail": "/assets/projects/Облачния мониторинг на успешните компании/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=v0Tx81tF-5s"
+}, {
+    "id": 321,
+    "name": "Изграждане на корпоративна мрежа чрез трета фаза на FVRF DMVPN свързаност",
+    "thumbnail": "/assets/projects/Изграждане на корпоративна мрежа чрез трета фаза на FVRF DMVPN свързаност/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=7HmY2NobbwI"
+}, {
+    "id": 319,
+    "name": "Изграждане на корпоративна мрежа чрез трета фаза на DMVPN",
+    "thumbnail": "/assets/projects/Изграждане на корпоративна мрежа чрез трета фаза на DMVPN/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=mTDjzduulC0"
+}, {
+    "id": 318,
+    "name": "Изграждане на корпоративна мрежа, използваща интернет и L2VPN услуги",
+    "thumbnail": "/assets/projects/Изграждане на корпоративна мрежа, използваща интернет и L2VPN услуги/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=I4hSB3nr93Y"
+}]

@@ -1,0 +1,775 @@
+[{
+    "id": 309,
+    "name": "SusCam",
+    "thumbnail": "/assets/projects/SusCam/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=vXTs6aCOWsA",
+    "category": "software"
+}, {
+    "id": 310,
+    "name": "pong game",
+    "thumbnail": "/assets/projects/pong game/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=xXYZa4UK9i8",
+    "category": "software"
+}, {
+    "id": 311,
+    "name": "PuzzleUp",
+    "thumbnail": "/assets/projects/PuzzleUp/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=oF5UCiH7V2s",
+    "category": "software"
+}, {
+    "id": 312,
+    "name": "The Knight Fighting Game",
+    "thumbnail": "/assets/projects/The Knight Fighting Game/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=VCYJ2cnxK6g",
+    "category": "software"
+}, {
+    "id": 313,
+    "name": "Pokemon Inception",
+    "thumbnail": "/assets/projects/Pokemon Inception/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=soH9RlucV3I",
+    "category": "software"
+}, {
+    "id": 314,
+    "name": "Kingdom's Keep",
+    "thumbnail": "/assets/projects/Kingdom's Keep/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=Aeg4uG2T12Y",
+    "category": "software"
+}, {
+    "id": 315,
+    "name": "PawSitter",
+    "thumbnail": "/assets/projects/PawSitter/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=o6K6wcUx4EA",
+    "category": "software"
+}, {
+    "id": 316,
+    "name": "Doctor COVID-19",
+    "thumbnail": "/assets/projects/Doctor COVID-19/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=DSQq-gKHpAM",
+    "category": "software"
+}, {
+    "id": 317,
+    "name": "DoTheKran",
+    "thumbnail": "/assets/projects/DoTheKran/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=7OhOroksSNI",
+    "category": "embedded"
+}, {
+    "id": 318,
+    "name": "Изграждане на корпоративна мрежа, използваща интернет и L2VPN услуги",
+    "thumbnail": "/assets/projects/Изграждане на корпоративна мрежа, използваща интернет и L2VPN услуги/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=I4hSB3nr93Y",
+    "category": "networks"
+}, {
+    "id": 319,
+    "name": "Изграждане на корпоративна мрежа чрез трета фаза на DMVPN",
+    "thumbnail": "/assets/projects/Изграждане на корпоративна мрежа чрез трета фаза на DMVPN/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=mTDjzduulC0",
+    "category": "networks"
+}, {
+    "id": 320,
+    "name": "Децентрализирана система за билети",
+    "thumbnail": "/assets/projects/Децентрализирана система за билети/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=qi8TjbD64eE",
+    "category": "software"
+}, {
+    "id": 321,
+    "name": "Изграждане на корпоративна мрежа чрез трета фаза на FVRF DMVPN свързаност",
+    "thumbnail": "/assets/projects/Изграждане на корпоративна мрежа чрез трета фаза на FVRF DMVPN свързаност/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=7HmY2NobbwI",
+    "category": "networks"
+}, {
+    "id": 322,
+    "name": "TimeWise",
+    "thumbnail": "/assets/projects/TimeWise/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=EwJ_Zh5lb1g",
+    "category": "software"
+}, {
+    "id": 323,
+    "name": "MovElsys iOS app",
+    "thumbnail": "/assets/projects/MovElsys iOS app/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=7Tqe4fYqlSg",
+    "category": "software"
+}, {
+    "id": 324,
+    "name": "Fiery 2D",
+    "thumbnail": "/assets/projects/Fiery 2D/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=lbPQWgFzT1s",
+    "category": "software"
+}, {
+    "id": 325,
+    "name": "Eat The Alien",
+    "thumbnail": "/assets/projects/Eat The Alien/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=BEKpgnTRldI",
+    "category": "software"
+}, {
+    "id": 326,
+    "name": "Stargaze",
+    "thumbnail": "/assets/projects/Stargaze/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=bBW7LLb_bjM",
+    "category": "software"
+}, {
+    "id": 327,
+    "name": "The Thermometerian",
+    "thumbnail": "/assets/projects/The Thermometerian/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=zh6DbT9DRK0",
+    "category": "embedded"
+}, {
+    "id": 328,
+    "name": "Цифров осцилоскоп с VGA изход",
+    "thumbnail": "/assets/projects/Цифров осцилоскоп с VGA изход/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=r9RHZ-xm7Zo",
+    "category": "embedded"
+}, {
+    "id": 329,
+    "name": "Cerebralink",
+    "thumbnail": "/assets/projects/Cerebralink/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=4Ts6QP4djoY",
+    "category": "embedded"
+}, {
+    "id": 330,
+    "name": "CPM",
+    "thumbnail": "/assets/projects/CPM/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=FZTji0tFSiQ",
+    "category": "software"
+}, {
+    "id": 331,
+    "name": "3DPE",
+    "thumbnail": "/assets/projects/3DPE/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=wU5PHL-7uYQ",
+    "category": "software"
+}, {
+    "id": 332,
+    "name": "Сензорна Iot мрежа, използваща протокола Thread",
+    "thumbnail": "/assets/projects/Сензорна Iot мрежа, използваща протокола Thread/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=gNjeo3nBVro",
+    "category": "embedded"
+}, {
+    "id": 333,
+    "name": "Biology4U",
+    "thumbnail": "/assets/projects/Biology4U/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=Uzp8YBO3PQY",
+    "category": "software"
+}, {
+    "id": 334,
+    "name": "Eventi",
+    "thumbnail": "/assets/projects/Eventi/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=FqqArfeJEVc",
+    "category": "software"
+}, {
+    "id": 335,
+    "name": "Протокол за комуникация за вграждане",
+    "thumbnail": "/assets/projects/Протокол за комуникация за вграждане/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=DhR6wN8Cd4U",
+    "category": "embedded"
+}, {
+    "id": 336,
+    "name": "CSR",
+    "thumbnail": "/assets/projects/CSR/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=5w_i3kPzGXI",
+    "category": "battlebot"
+}, {
+    "id": 337,
+    "name": "Облачния мониторинг на успешните компании",
+    "thumbnail": "/assets/projects/Облачния мониторинг на успешните компании/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=v0Tx81tF-5s",
+    "category": "networks"
+}, {
+    "id": 338,
+    "name": "Employmently",
+    "thumbnail": "/assets/projects/Employmently/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=tkhy8iIgU7w",
+    "category": "software"
+}, {
+    "id": 339,
+    "name": "Проектиране на система за регистриране на картите при игра на състезателен бридж",
+    "thumbnail": "/assets/projects/Проектиране на система за регистриране на картите при игра на състезателен бридж/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=TXXqoLccSPQ",
+    "category": "embedded"
+}, {
+    "id": 340,
+    "name": "SnakeAI",
+    "thumbnail": "/assets/projects/SnakeAI/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=FsGUzhRY-K8",
+    "category": "software"
+}, {
+    "id": 341,
+    "name": "Tetris Tower",
+    "thumbnail": "/assets/projects/Tetris Tower/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=q9gDFbRnJJU",
+    "category": "embedded"
+}, {
+    "id": 342,
+    "name": "WiGlobe",
+    "thumbnail": "/assets/projects/WiGlobe/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=97vKLYen0CM",
+    "category": "software"
+}, {
+    "id": 343,
+    "name": "BelotCounter",
+    "thumbnail": "/assets/projects/BelotCounter/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=WJ9Iv0jSGIM",
+    "category": "embedded"
+}, {
+    "id": 344,
+    "name": "ELUDO",
+    "thumbnail": "/assets/projects/ELUDO/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=9DeqBqlXhs4",
+    "category": "embedded"
+}, {
+    "id": 345,
+    "name": "Изграждане на корпоративна мрежа посредством защитни стени Fortigate",
+    "thumbnail": "/assets/projects/Изграждане на корпоративна мрежа посредством защитни стени Fortigate/images/image0.webp",
+    "video": "",
+    "category": "networks"
+}, {
+    "id": 346,
+    "name": "Ordertaker",
+    "thumbnail": "/assets/projects/Ordertaker/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=a1u4AjecWKU",
+    "category": "software"
+}, {
+    "id": 347,
+    "name": "VPN Types",
+    "thumbnail": "/assets/projects/VPN Types/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=ag4QujML7Tg",
+    "category": "networks"
+}, {
+    "id": 348,
+    "name": "Battlebot",
+    "thumbnail": "/assets/projects/Battlebot/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=vAfEAITOZvo",
+    "category": "battlebot"
+}, {
+    "id": 349,
+    "name": "OpenAI journey",
+    "thumbnail": "/assets/projects/OpenAI journey/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=XKE8EfMvHp4",
+    "category": "software"
+}, {
+    "id": 350,
+    "name": "SecureSpace",
+    "thumbnail": "/assets/projects/SecureSpace/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=JpSEpChsLbk",
+    "category": "embedded"
+}, {
+    "id": 351,
+    "name": "RateItFair",
+    "thumbnail": "/assets/projects/RateItFair/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=zuBVwOM1qPg",
+    "category": "software"
+}, {
+    "id": 352,
+    "name": "Ghost Bat UAV",
+    "thumbnail": "/assets/projects/Ghost Bat UAV/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=gYHy-032uKQ",
+    "category": "embedded"
+}, {
+    "id": 353,
+    "name": "Библиотека за създаване на текстови потребителски интерфейс",
+    "thumbnail": "/assets/projects/Библиотека за създаване на текстови потребителски интерфейс/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=Eu-7VEhIARE",
+    "category": "software"
+}, {
+    "id": 354,
+    "name": "bobcat",
+    "thumbnail": "/assets/projects/bobcat/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=PYjiiogs7AQ",
+    "category": "battlebot"
+}, {
+    "id": 355,
+    "name": "EngraveExpress",
+    "thumbnail": "/assets/projects/EngraveExpress/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=p4W_IvtoLaE",
+    "category": "embedded"
+}, {
+    "id": 356,
+    "name": "PURPLE",
+    "thumbnail": "/assets/projects/PURPLE/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=cfAbr9W3nZk",
+    "category": "embedded"
+}, {
+    "id": 357,
+    "name": "Пухкаво Облаче",
+    "thumbnail": "/assets/projects/Пухкаво Облаче/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=X2tb2ujxRlQ",
+    "category": "networks"
+}, {
+    "id": 358,
+    "name": "LaserGecko",
+    "thumbnail": "/assets/projects/LaserGecko/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=aw-HhHYKN7A",
+    "category": "embedded"
+}, {
+    "id": 359,
+    "name": "Dread",
+    "thumbnail": "/assets/projects/Dread/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=dj-ZJnh14c4",
+    "category": "battlebot"
+}, {
+    "id": 360,
+    "name": "OnlyLeds",
+    "thumbnail": "/assets/projects/OnlyLeds/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=xNCCaBaPt5c",
+    "category": "embedded"
+}, {
+    "id": 361,
+    "name": "BeSafe",
+    "thumbnail": "/assets/projects/BeSafe/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=pNpU0nxRNtI",
+    "category": "software"
+}, {
+    "id": 362,
+    "name": "HomeguARD",
+    "thumbnail": "/assets/projects/HomeguARD/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=WWCdOH96dhY",
+    "category": "embedded"
+}, {
+    "id": 363,
+    "name": "SmartSOS",
+    "thumbnail": "/assets/projects/SmartSOS/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=7yG2h-YJVw8",
+    "category": "embedded"
+}, {
+    "id": 364,
+    "name": "Fleeze",
+    "thumbnail": "/assets/projects/Fleeze/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=JayPm4iU3VY",
+    "category": "battlebot"
+}, {
+    "id": 365,
+    "name": "Weijrn",
+    "thumbnail": "/assets/projects/Weijrn/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=wee64v5AZCg",
+    "category": "embedded"
+}, {
+    "id": 366,
+    "name": "MECHKA by Budget Dynamics",
+    "thumbnail": "/assets/projects/MECHKA by Budget Dynamics/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=mcv_eNT28IA",
+    "category": "embedded"
+}, {
+    "id": 367,
+    "name": "FaceVault",
+    "thumbnail": "/assets/projects/FaceVault/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=2DDUQr9Qfns",
+    "category": "software"
+}, {
+    "id": 368,
+    "name": "Beware",
+    "thumbnail": "/assets/projects/Beware/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=LoghOj8vFK0",
+    "category": "software"
+}, {
+    "id": 369,
+    "name": "Doc Help",
+    "thumbnail": "/assets/projects/Doc Help/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=gUpXHjLxr3w",
+    "category": "software"
+}, {
+    "id": 370,
+    "name": "SafeLoot",
+    "thumbnail": "/assets/projects/SafeLoot/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=ePAJPKTktsk",
+    "category": "software"
+}, {
+    "id": 371,
+    "name": "Kowen",
+    "thumbnail": "/assets/projects/Kowen/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=GYULCIssbo4",
+    "category": "software"
+}, {
+    "id": 372,
+    "name": "Wall-E",
+    "thumbnail": "/assets/projects/Wall-E/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=HCEDGlgUkYg",
+    "category": "embedded"
+}, {
+    "id": 373,
+    "name": "Dry Joystick",
+    "thumbnail": "/assets/projects/Dry Joystick/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=fATIiZSh1kQ",
+    "category": "embedded"
+}, {
+    "id": 374,
+    "name": "Escape room game",
+    "thumbnail": "/assets/projects/Escape room game/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=zi8o0oaO284",
+    "category": "software"
+}, {
+    "id": 375,
+    "name": "MagicBox",
+    "thumbnail": "/assets/projects/MagicBox/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=uBh1Ram3VFg",
+    "category": "embedded"
+}, {
+    "id": 376,
+    "name": "Data Exotica",
+    "thumbnail": "/assets/projects/Data Exoitca/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=jn0GtsObFqI",
+    "category": "software"
+}, {
+    "id": 377,
+    "name": "Julta Kartina S kotka",
+    "thumbnail": "/assets/projects/Julta Kartina S kotka/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=gB4A4PTaFDc",
+    "category": "embedded"
+}, {
+    "id": 378,
+    "name": "Qwerty Password Manager",
+    "thumbnail": "/assets/projects/Qwerty Password Manager/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=Rveh7i67yBs",
+    "category": "software"
+}, {
+    "id": 379,
+    "name": "Password Manager",
+    "thumbnail": "/assets/projects/Password Manager/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=OLMmuPPpl-s",
+    "category": "software"
+}, {
+    "id": 380,
+    "name": "ШейкБот",
+    "thumbnail": "/assets/projects/ШейкБот/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=1YSoU3ycB8I",
+    "category": "embedded"
+}, {
+    "id": 381,
+    "name": "Adventures of a house cat",
+    "thumbnail": "/assets/projects/Adventures of a house cat/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=g3eq1VW6MMo",
+    "category": "software"
+}, {
+    "id": 382,
+    "name": "DIY дрон",
+    "thumbnail": "/assets/projects/DIY дрон/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=nhtrRnp9eEk",
+    "category": "embedded"
+}, {
+    "id": 383,
+    "name": ".2",
+    "thumbnail": "/assets/projects/.2/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=VDw-MT3khyw",
+    "category": "software"
+}, {
+    "id": 384,
+    "name": "PhoCo",
+    "thumbnail": "/assets/projects/PhoCo/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=5G-4Y7h48e4",
+    "category": "software"
+}, {
+    "id": 385,
+    "name": "Ve-Fi",
+    "thumbnail": "/assets/projects/Ve-Fi/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=c0aBOpJ9igQ",
+    "category": "software"
+}, {
+    "id": 386,
+    "name": "AirBuzz",
+    "thumbnail": "/assets/projects/AirBuzz/images/image1.webp",
+    "video": "https://www.youtube.com/watch?v=pkiO-9K8qbU",
+    "category": "embedded"
+}, {
+    "id": 387,
+    "name": "RMNDR",
+    "thumbnail": "/assets/projects/RMNDR/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=0UuDeeNJL84",
+    "category": "embedded"
+}, {
+    "id": 388,
+    "name": "ResQMe",
+    "thumbnail": "/assets/projects/ResQMe/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=0mmILL2A4Xo",
+    "category": "software"
+}, {
+    "id": 389,
+    "name": "EP MiniMixer",
+    "thumbnail": "/assets/projects/EP MiniMixer/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=QU8t2p8mqv4",
+    "category": "embedded"
+}, {
+    "id": 390,
+    "name": "B-52",
+    "thumbnail": "/assets/projects/B-52/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=wx49Zsxl6D8",
+    "category": "embedded"
+}, {
+    "id": 391,
+    "name": "Самонасочваща се Яги антена",
+    "thumbnail": "/assets/projects/Самонасочваща се Яги антена/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=WoxiFngS-E8",
+    "category": "embedded"
+}, {
+    "id": 392,
+    "name": "Visions of Destiny",
+    "thumbnail": "/assets/projects/Visions of Destiny/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=RU8kXTWkC-c",
+    "category": "software"
+}, {
+    "id": 393,
+    "name": "ECCS",
+    "thumbnail": "/assets/projects/ECCS/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=bmzie1VV_E0",
+    "category": "embedded"
+}, {
+    "id": 394,
+    "name": "LoRa Textie",
+    "thumbnail": "/assets/projects/LoRa Textie/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=nHD1MX-YWCE",
+    "category": "embedded"
+}, {
+    "id": 395,
+    "name": "Fire alarming system",
+    "thumbnail": "/assets/projects/Fire alarming system/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=em8PFUJ_I4w",
+    "category": "embedded"
+}, {
+    "id": 396,
+    "name": "GIXY",
+    "thumbnail": "/assets/projects/GIXY/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=AfTRpQlScKg",
+    "category": "embedded"
+}, {
+    "id": 397,
+    "name": "Автоматична хранилка за котка",
+    "thumbnail": "/assets/projects/Автоматична хранилка за котка/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=QwOZ4T62cOI",
+    "category": "embedded"
+}, {
+    "id": 398,
+    "name": "Anti-Fight System",
+    "thumbnail": "/assets/projects/Anti-Fight System/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=vpLna2cytN0",
+    "category": "software"
+}, {
+    "id": 399,
+    "name": "TtT IoT Firewall",
+    "thumbnail": "/assets/projects/TtT IoT Firewall/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=lor523D3n40",
+    "category": "networks"
+}, {
+    "id": 400,
+    "name": "B.AA.S.E.D.",
+    "thumbnail": "/assets/projects/B.AA.S.E.D./images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=HKqMKENt33E",
+    "category": "embedded"
+}, {
+    "id": 401,
+    "name": "RbCop",
+    "thumbnail": "/assets/projects/RbCop/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=oTpXBRg9ULU",
+    "category": "embedded"
+}, {
+    "id": 402,
+    "name": "CypherEye",
+    "thumbnail": "/assets/projects/CypherEye/images/image1.webp",
+    "video": "https://www.youtube.com/watch?v=jDREx7gn46c",
+    "category": "software"
+}, {
+    "id": 403,
+    "name": "Petsafe: For the safety of your pets",
+    "thumbnail": "/assets/projects/Petsafe: For the safety of your pets/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=44XqCEmaIB8",
+    "category": "embedded"
+}, {
+    "id": 404,
+    "name": "Pixel pursuit",
+    "thumbnail": "/assets/projects/Pixel pursuit/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=LGDUBmWS4oA",
+    "category": "software"
+}, {
+    "id": 405,
+    "name": "Спаринг машина 'Splinter'",
+    "thumbnail": "/assets/projects/Спаринг машина 'Splinter'/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=o_9PURtL6aQ",
+    "category": "embedded"
+}, {
+    "id": 406,
+    "name": "RoadHaze",
+    "thumbnail": "/assets/projects/RoadHaze/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=wWFmdfIxLDg",
+    "category": "software"
+}, {
+    "id": 407,
+    "name": "PhishMe",
+    "thumbnail": "/assets/projects/PhishMe/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=rIEJfrttjfI",
+    "category": "software"
+}, {
+    "id": 408,
+    "name": "tuesplace",
+    "thumbnail": "/assets/projects/tuesplace/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=__3AXfVL5Ko",
+    "category": "software"
+}, {
+    "id": 409,
+    "name": "LockdIn",
+    "thumbnail": "/assets/projects/LockdIn/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=jqxnIjhZIs4",
+    "category": "embedded"
+}, {
+    "id": 410,
+    "name": "xoBlack",
+    "thumbnail": "/assets/projects/xoBlack/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=Az0_tj56kAg",
+    "category": "embedded"
+}, {
+    "id": 411,
+    "name": "Language partner",
+    "thumbnail": "/assets/projects/Language partner/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=NusCzP7c8NM",
+    "category": "software"
+}, {
+    "id": 412,
+    "name": "Светкавичката",
+    "thumbnail": "/assets/projects/Светкавичката/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=yiA8Qf1Ut3M",
+    "category": "embedded"
+}, {
+    "id": 413,
+    "name": "113 Security",
+    "thumbnail": "/assets/projects/113 Security/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=kuSvFJmJ2a4",
+    "category": "embedded"
+}, {
+    "id": 414,
+    "name": "Гласов контрол у дома",
+    "thumbnail": "/assets/projects/Гласов контрол у дома/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=6FL459nPaqo",
+    "category": "embedded"
+}, {
+    "id": 415,
+    "name": "Fat cat",
+    "thumbnail": "/assets/projects/Fat cat/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=zGHuxUQNMlE",
+    "category": "embedded"
+}, {
+    "id": 416,
+    "name": "Ardentia",
+    "thumbnail": "/assets/projects/Ardentia/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=F_yysMXUPCY",
+    "category": "software"
+}, {
+    "id": 417,
+    "name": "Alert",
+    "thumbnail": "/assets/projects/Alert/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=EbnqYAtn5Vo",
+    "category": "software"
+}, {
+    "id": 418,
+    "name": "Dishwasher",
+    "thumbnail": "/assets/projects/Dishwasher/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=IM0XyEEonjA",
+    "category": "embedded"
+}, {
+    "id": 419,
+    "name": "BioAccess",
+    "thumbnail": "/assets/projects/BioAccess/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=H05X02mNGjs",
+    "category": "embedded"
+}, {
+    "id": 420,
+    "name": "Wally",
+    "thumbnail": "/assets/projects/Wally/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=Ovo6tVHdtCw",
+    "category": "software"
+}, {
+    "id": 421,
+    "name": "Axerman",
+    "thumbnail": "/assets/projects/Axerman/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=c7sL0yDaCV4",
+    "category": "battlebot"
+}, {
+    "id": 422,
+    "name": "CNC Машина",
+    "thumbnail": "/assets/projects/CNC Машина/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=vx2JKFdSxpU",
+    "category": "embedded"
+}, {
+    "id": 423,
+    "name": "SHUSH",
+    "thumbnail": "/assets/projects/SHUSH/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=8WjfF9EmRbk",
+    "category": "software"
+}, {
+    "id": 424,
+    "name": "DO²R",
+    "thumbnail": "/assets/projects/DO²R/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=Pg2xfR-Veu8",
+    "category": "embedded"
+}, {
+    "id": 425,
+    "name": "Ежко Бежко",
+    "thumbnail": "/assets/projects/Ежко Бежко/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=Hoy-u7-3zhQ",
+    "category": "battlebot"
+}, {
+    "id": 426,
+    "name": "S.U.P.A",
+    "thumbnail": "/assets/projects/S.U.P.A/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=n3rf0_IKtjE",
+    "category": "embedded"
+}, {
+    "id": 427,
+    "name": "Hand Controlled Tilting Maze",
+    "thumbnail": "/assets/projects/Hand Controlled Tilting Maze/images/image1.webp",
+    "video": "https://www.youtube.com/watch?v=IA0UHvC3_8Q",
+    "category": "embedded"
+}, {
+    "id": 428,
+    "name": "CryptiX",
+    "thumbnail": "/assets/projects/CryptiX/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=L0k4ppzaMpg",
+    "category": "software"
+}, {
+    "id": 429,
+    "name": "StockGuard",
+    "thumbnail": "/assets/projects/StockGuard/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=YJFQgsdvauc",
+    "category": "embedded"
+}, {
+    "id": 430,
+    "name": "Nerf Turret",
+    "thumbnail": "/assets/projects/Nerf Turret/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=Ib3yupidX_Q",
+    "category": "embedded"
+}, {
+    "id": 431,
+    "name": "Planet Prospect",
+    "thumbnail": "/assets/projects/Planet Prospect/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=x2B2Dds58AQ",
+    "category": "software"
+}, {
+    "id": 432,
+    "name": "RubiSolver",
+    "thumbnail": "/assets/projects/RubiSolver/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=h9gyr3kQKfw",
+    "category": "embedded"
+}, {
+    "id": 433,
+    "name": "Minotaur",
+    "thumbnail": "/assets/projects/Minotaur/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=XfIfKMzpLnw",
+    "category": "battlebot"
+}, {
+    "id": 434,
+    "name": "MLG",
+    "thumbnail": "/assets/projects/MLG/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=FMya2a3l_fY",
+    "category": "embedded"
+}, {
+    "id": 435,
+    "name": "TNR-12",
+    "thumbnail": "/assets/projects/TNR-12/images/image1.webp",
+    "video": "https://www.youtube.com/watch?v=eWQDGko9wck",
+    "category": "battlebot"
+}, {
+    "id": 436,
+    "name": "Social media with Crypto marketplace",
+    "thumbnail": "/assets/projects/Social media with Crypto marketplace/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=gHmXkm-zFt4",
+    "category": "software"
+}, {
+    "id": 437,
+    "name": "Dogoino",
+    "thumbnail": "/assets/projects/Dogoino/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=fryZ6L0nwnk",
+    "category": "embedded"
+}]
