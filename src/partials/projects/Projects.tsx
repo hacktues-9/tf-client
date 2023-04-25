@@ -18,10 +18,12 @@ export interface Project {
 const getProjects = async (category: string): Promise<Project[]> => {
 	if (!['software', 'embedded', 'battlebot', 'networks', 'all'].includes(category)) redirect('/projects');
 
-	const url = `https://api.tuesfest.bg/v1/get/projects${category === 'all' ? '' : '/' + category}`;
+	// load from static file in public directory
+
+	const url = `https://tuesfest.bg/data/projects${category === 'all' ? '' : '/' + category}.json`;
 	console.warn(url);
 
-	const res = await fetch(url, { next: { revalidate: 14000 } });
+	const res = await fetch(url);
 
 	if (!res.ok) {
 		// This will activate the closest `error.js` Error Boundary
