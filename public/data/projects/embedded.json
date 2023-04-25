@@ -1,0 +1,286 @@
+[{
+    "id": 437,
+    "name": "Dogoino",
+    "thumbnail": "/assets/projects/Dogoino/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=fryZ6L0nwnk"
+}, {
+    "id": 434,
+    "name": "MLG",
+    "thumbnail": "/assets/projects/MLG/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=FMya2a3l_fY"
+}, {
+    "id": 432,
+    "name": "RubiSolver",
+    "thumbnail": "/assets/projects/RubiSolver/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=h9gyr3kQKfw"
+}, {
+    "id": 430,
+    "name": "Nerf Turret",
+    "thumbnail": "/assets/projects/Nerf Turret/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=Ib3yupidX_Q"
+}, {
+    "id": 429,
+    "name": "StockGuard",
+    "thumbnail": "/assets/projects/StockGuard/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=YJFQgsdvauc"
+}, {
+    "id": 427,
+    "name": "Hand Controlled Tilting Maze",
+    "thumbnail": "/assets/projects/Hand Controlled Tilting Maze/images/image1.webp",
+    "video": "https://www.youtube.com/watch?v=IA0UHvC3_8Q"
+}, {
+    "id": 426,
+    "name": "S.U.P.A",
+    "thumbnail": "/assets/projects/S.U.P.A/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=n3rf0_IKtjE"
+}, {
+    "id": 424,
+    "name": "DO²R",
+    "thumbnail": "/assets/projects/DO²R/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=Pg2xfR-Veu8"
+}, {
+    "id": 422,
+    "name": "CNC Машина",
+    "thumbnail": "/assets/projects/CNC Машина/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=vx2JKFdSxpU"
+}, {
+    "id": 419,
+    "name": "BioAccess",
+    "thumbnail": "/assets/projects/BioAccess/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=H05X02mNGjs"
+}, {
+    "id": 418,
+    "name": "Dishwasher",
+    "thumbnail": "/assets/projects/Dishwasher/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=IM0XyEEonjA"
+}, {
+    "id": 415,
+    "name": "Fat cat",
+    "thumbnail": "/assets/projects/Fat cat/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=zGHuxUQNMlE"
+}, {
+    "id": 414,
+    "name": "Гласов контрол у дома",
+    "thumbnail": "/assets/projects/Гласов контрол у дома/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=6FL459nPaqo"
+}, {
+    "id": 413,
+    "name": "113 Security",
+    "thumbnail": "/assets/projects/113 Security/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=kuSvFJmJ2a4"
+}, {
+    "id": 412,
+    "name": "Светкавичката",
+    "thumbnail": "/assets/projects/Светкавичката/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=yiA8Qf1Ut3M"
+}, {
+    "id": 410,
+    "name": "xoBlack",
+    "thumbnail": "/assets/projects/xoBlack/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=Az0_tj56kAg"
+}, {
+    "id": 409,
+    "name": "LockdIn",
+    "thumbnail": "/assets/projects/LockdIn/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=jqxnIjhZIs4"
+}, {
+    "id": 405,
+    "name": "Спаринг машина 'Splinter'",
+    "thumbnail": "/assets/projects/Спаринг машина 'Splinter'/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=o_9PURtL6aQ"
+}, {
+    "id": 403,
+    "name": "Petsafe: For the safety of your pets",
+    "thumbnail": "/assets/projects/Petsafe: For the safety of your pets/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=44XqCEmaIB8"
+}, {
+    "id": 401,
+    "name": "RbCop",
+    "thumbnail": "/assets/projects/RbCop/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=oTpXBRg9ULU"
+}, {
+    "id": 400,
+    "name": "B.AA.S.E.D.",
+    "thumbnail": "/assets/projects/B.AA.S.E.D./images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=HKqMKENt33E"
+}, {
+    "id": 397,
+    "name": "Автоматична хранилка за котка",
+    "thumbnail": "/assets/projects/Автоматична хранилка за котка/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=QwOZ4T62cOI"
+}, {
+    "id": 396,
+    "name": "GIXY",
+    "thumbnail": "/assets/projects/GIXY/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=AfTRpQlScKg"
+}, {
+    "id": 395,
+    "name": "Fire alarming system",
+    "thumbnail": "/assets/projects/Fire alarming system/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=em8PFUJ_I4w"
+}, {
+    "id": 394,
+    "name": "LoRa Textie",
+    "thumbnail": "/assets/projects/LoRa Textie/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=nHD1MX-YWCE"
+}, {
+    "id": 393,
+    "name": "ECCS",
+    "thumbnail": "/assets/projects/ECCS/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=bmzie1VV_E0"
+}, {
+    "id": 391,
+    "name": "Самонасочваща се Яги антена",
+    "thumbnail": "/assets/projects/Самонасочваща се Яги антена/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=WoxiFngS-E8"
+}, {
+    "id": 390,
+    "name": "B-52",
+    "thumbnail": "/assets/projects/B-52/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=wx49Zsxl6D8"
+}, {
+    "id": 389,
+    "name": "EP MiniMixer",
+    "thumbnail": "/assets/projects/EP MiniMixer/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=QU8t2p8mqv4"
+}, {
+    "id": 387,
+    "name": "RMNDR",
+    "thumbnail": "/assets/projects/RMNDR/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=0UuDeeNJL84"
+}, {
+    "id": 386,
+    "name": "AirBuzz",
+    "thumbnail": "/assets/projects/AirBuzz/images/image1.webp",
+    "video": "https://www.youtube.com/watch?v=pkiO-9K8qbU"
+}, {
+    "id": 382,
+    "name": "DIY дрон",
+    "thumbnail": "/assets/projects/DIY дрон/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=nhtrRnp9eEk"
+}, {
+    "id": 380,
+    "name": "ШейкБот",
+    "thumbnail": "/assets/projects/ШейкБот/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=1YSoU3ycB8I"
+}, {
+    "id": 377,
+    "name": "Julta Kartina S kotka",
+    "thumbnail": "/assets/projects/Julta Kartina S kotka/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=gB4A4PTaFDc"
+}, {
+    "id": 375,
+    "name": "MagicBox",
+    "thumbnail": "/assets/projects/MagicBox/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=uBh1Ram3VFg"
+}, {
+    "id": 373,
+    "name": "Dry Joystick",
+    "thumbnail": "/assets/projects/Dry Joystick/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=fATIiZSh1kQ"
+}, {
+    "id": 372,
+    "name": "Wall-E",
+    "thumbnail": "/assets/projects/Wall-E/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=HCEDGlgUkYg"
+}, {
+    "id": 366,
+    "name": "MECHKA by Budget Dynamics",
+    "thumbnail": "/assets/projects/MECHKA by Budget Dynamics/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=mcv_eNT28IA"
+}, {
+    "id": 365,
+    "name": "Weijrn",
+    "thumbnail": "/assets/projects/Weijrn/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=wee64v5AZCg"
+}, {
+    "id": 363,
+    "name": "SmartSOS",
+    "thumbnail": "/assets/projects/SmartSOS/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=7yG2h-YJVw8"
+}, {
+    "id": 362,
+    "name": "HomeguARD",
+    "thumbnail": "/assets/projects/HomeguARD/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=WWCdOH96dhY"
+}, {
+    "id": 360,
+    "name": "OnlyLeds",
+    "thumbnail": "/assets/projects/OnlyLeds/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=xNCCaBaPt5c"
+}, {
+    "id": 358,
+    "name": "LaserGecko",
+    "thumbnail": "/assets/projects/LaserGecko/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=aw-HhHYKN7A"
+}, {
+    "id": 356,
+    "name": "PURPLE",
+    "thumbnail": "/assets/projects/PURPLE/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=cfAbr9W3nZk"
+}, {
+    "id": 355,
+    "name": "EngraveExpress",
+    "thumbnail": "/assets/projects/EngraveExpress/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=p4W_IvtoLaE"
+}, {
+    "id": 352,
+    "name": "Ghost Bat UAV",
+    "thumbnail": "/assets/projects/Ghost Bat UAV/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=gYHy-032uKQ"
+}, {
+    "id": 350,
+    "name": "SecureSpace",
+    "thumbnail": "/assets/projects/SecureSpace/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=JpSEpChsLbk"
+}, {
+    "id": 344,
+    "name": "ELUDO",
+    "thumbnail": "/assets/projects/ELUDO/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=9DeqBqlXhs4"
+}, {
+    "id": 343,
+    "name": "BelotCounter",
+    "thumbnail": "/assets/projects/BelotCounter/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=WJ9Iv0jSGIM"
+}, {
+    "id": 341,
+    "name": "Tetris Tower",
+    "thumbnail": "/assets/projects/Tetris Tower/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=q9gDFbRnJJU"
+}, {
+    "id": 339,
+    "name": "Проектиране на система за регистриране на картите при игра на състезателен бридж",
+    "thumbnail": "/assets/projects/Проектиране на система за регистриране на картите при игра на състезателен бридж/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=TXXqoLccSPQ"
+}, {
+    "id": 335,
+    "name": "Протокол за комуникация за вграждане",
+    "thumbnail": "/assets/projects/Протокол за комуникация за вграждане/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=DhR6wN8Cd4U"
+}, {
+    "id": 332,
+    "name": "Сензорна Iot мрежа, използваща протокола Thread",
+    "thumbnail": "/assets/projects/Сензорна Iot мрежа, използваща протокола Thread/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=gNjeo3nBVro"
+}, {
+    "id": 329,
+    "name": "Cerebralink",
+    "thumbnail": "/assets/projects/Cerebralink/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=4Ts6QP4djoY"
+}, {
+    "id": 328,
+    "name": "Цифров осцилоскоп с VGA изход",
+    "thumbnail": "/assets/projects/Цифров осцилоскоп с VGA изход/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=r9RHZ-xm7Zo"
+}, {
+    "id": 327,
+    "name": "The Thermometerian",
+    "thumbnail": "/assets/projects/The Thermometerian/images/image0.webp",
+    "video": "https://www.youtube.com/watch?v=zh6DbT9DRK0"
+}, {
+    "id": 317,
+    "name": "DoTheKran",
+    "thumbnail": "/assets/projects/DoTheKran/thumbnail.webp",
+    "video": "https://www.youtube.com/watch?v=7OhOroksSNI"
+}]
