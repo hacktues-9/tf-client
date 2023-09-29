@@ -25,7 +25,7 @@ export default function Home() {
 						</span>
 						<br className="text-3xl leading-none" />
 						<span className="!leading-none !tracking-wide text-7xl sm:text-7xl md:text-8xl text-center font-origin font-normal drop-shadow-lg">
-							2023
+							2024
 						</span>
 					</h1>
 				</div>
