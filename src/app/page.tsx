@@ -38,7 +38,7 @@ export default function Home() {
 						</div>
 						<div className="w-full px-4 py-2 flex items-center justify-center gap-2 text-lg rounded-lg bg-bg-color border border-border">
 							<TbClockHour4 size={24} />
-							<p>23 април от 10:30</p>
+							<p>20 април от 10:30</p>
 						</div>
 					</div>
 				</div>
