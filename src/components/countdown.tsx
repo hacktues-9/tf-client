@@ -111,9 +111,9 @@ const Countdown = () => {
 
 	// call countdown function
 	 useEffect(() => {
-	 	// startCountdown();
-	 	// const interval = setInterval(count, 1000);
-	 	// return () => clearInterval(interval);
+	 	 startCountdown();
+	 	 const interval = setInterval(count, 1000);
+	 	 return () => clearInterval(interval);
 	 }, []);
 
 	return (
