@@ -12,11 +12,11 @@ import VotingLayout from '@/partials/layout/Voting';
 
 export const metadata = {
 	title: {
-		default: 'TUES Fest 2023',
-		template: '%s | TUES Fest 2023',
+		default: 'TUES Fest 2024',
+		template: '%s | TUES Fest 2024',
 	},
 	description:
-		'TUES Fest 2023 - ден на отворените врати на ТУЕС и изложение на ученически проекти. София Тех Парк - 23 април 2023.',
+		'TUES Fest 2024 - ден на отворените врати на ТУЕС и изложение на ученически проекти. София Тех Парк - 20 април 2024.',
 	keywords: [
 		'tues',
 		'tues fest',
@@ -79,20 +79,20 @@ export const metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'TUES Fest 2023',
+		title: 'TUES Fest 2024',
 		description:
-			'TUES Fest 2023 - ден на отворените врати на ТУЕС и изложение на ученически проекти. София Тех Парк - 23 април 2023.',
+			'TUES Fest 2024 - ден на отворените врати на ТУЕС и изложение на ученически проекти. София Тех Парк - 20 април 2024.',
 		creator: '@tuesfest',
 		images: ['https://tuesfest.bg/logo/motto.png'],
 	},
 	archives: ['https://2022.tuesfest.bg'],
 	assets: ['https://tuesfest.bg/favicon.png', 'https://tuesfest.bg/logo/motto.png', 'https://tuesfest.bg/assets'],
 	openGraph: {
-		title: 'TUES Fest 2023',
+		title: 'TUES Fest 2024',
 		description:
-			'TUES Fest 2023 - ден на отворените врати на ТУЕС и изложение на ученически проекти. София Тех Парк - 23 април 2023.',
+			'TUES Fest 2024 - ден на отворените врати на ТУЕС и изложение на ученически проекти. София Тех Парк - 20 април 2024.',
 		url: 'https://tuesfest.bg',
-		siteName: 'TUES Fest 2023',
+		siteName: 'TUES Fest 2024',
 		images: [
 			{
 				url: 'https://tuesfest.bg/logo/motto.png',
