@@ -25,7 +25,7 @@
 .stack ul {
 	grid-row-start: 1;
 	grid-column-start: 1;
-	font-size: 4rem;
+	font-size: 3rem;
 	--stack-height: calc(100% / var(--stacks) - 1px);
 	--inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
 	--clip-top: calc(var(--stack-height) * var(--index));
@@ -121,7 +121,7 @@ ul.countdown li {
 	/* padding: 0;
 	display: inline-block; */
 	padding: 1rem;
-	font-size: 4rem;
+	font-size: 3rem;
 	text-align: center;
 	font-weight: bolder;
 	color: #c4c4c4;
@@ -144,7 +144,7 @@ ul.countdown .label {
 	} */
 
 	ul.countdown li {
-		font-size: 3.5rem;
+		font-size: 2.5rem;
 		width: 6.5rem;
 		height: 6.5rem;
 		aspect-ratio: 1/1 !important;
@@ -157,7 +157,7 @@ ul.countdown .label {
 	} */
 
 	ul.countdown li {
-		font-size: 3rem;
+		font-size: 2rem;
 		width: 6rem;
 		height: 6rem;
 		aspect-ratio: 1/1 !important;
@@ -170,7 +170,7 @@ ul.countdown .label {
 	} */
 
 	ul.countdown li {
-		font-size: 2.5rem;
+		font-size: 1.5rem;
 		width: 5.5rem;
 		height: 5.5rem;
 		aspect-ratio: 1/1 !important;
