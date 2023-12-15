@@ -25,7 +25,7 @@ export default function Home() {
 						</span>
 						<br className="text-3xl leading-none" />
 						<span className="!leading-none !tracking-wide text-7xl sm:text-7xl md:text-8xl text-center font-origin font-normal drop-shadow-lg">
-							2024
+							2023
 						</span>
 					</h1>
 				</div>
@@ -38,7 +38,7 @@ export default function Home() {
 						</div>
 						<div className="w-full px-4 py-2 flex items-center justify-center gap-2 text-lg rounded-lg bg-bg-color border border-border">
 							<TbClockHour4 size={24} />
-							<p>20 април от 10:30</p>
+							<p>23 април от 10:30</p>
 						</div>
 					</div>
 				</div>
