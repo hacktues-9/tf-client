@@ -6,7 +6,7 @@ import 'animate.css';
 
 import countdownStyles from '@/styles/home/countdown.module.css';
 
-const THE_DATE = new Date('Apr 20, 2024 10:00:00').getTime();
+const THE_DATE = new Date('Apr 23, 2023 10:00:00').getTime();
 
 const Countdown = () => {
 	const [countdown, setCountdown] = useState({
@@ -110,11 +110,11 @@ const Countdown = () => {
 	const format = (item: number) => (item < 10 ? `0${item}` : item);
 
 	// call countdown function
-	 useEffect(() => {
-	 	 startCountdown();
-	 	 const interval = setInterval(count, 1000);
-	 	 return () => clearInterval(interval);
-	 }, []);
+	// useEffect(() => {
+	// 	// startCountdown();
+	// 	// const interval = setInterval(count, 1000);
+	// 	// return () => clearInterval(interval);
+	// }, []);
 
 	return (
 		<div className={countdownStyles.stack /* + ' animate__animated animate__fadeInTopRight' */}>
