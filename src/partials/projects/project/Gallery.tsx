@@ -22,7 +22,7 @@ const GalleryModal = ({
 		if (index === pictures.length - 1) {
 			setIndex(0);
 		} else {
-			setIndex(index + 1);
+			setIndex((prevIndex: number) => prevIndex + 1);
 		}
 	}, [index, pictures.length]);
 
@@ -30,7 +30,7 @@ const GalleryModal = ({
 		if (index === 0) {
 			setIndex(pictures.length - 1);
 		} else {
-			setIndex(index - 1);
+			setIndex((prevIndex: number) => prevIndex - 1);
 		}
 	}, [index, pictures.length]);
 
@@ -77,18 +77,6 @@ const GalleryModal = ({
 			}, 500);
 		};
 
-		// const handleTouch = (e: TouchEvent) => {
-		// 	e.preventDefault();
-
-		// 	setTimeout(() => {
-		// 		if (e.touches[0].clientX < e.touches[1].clientX) {
-		// 			next();
-		// 		} else {
-		// 			prev();
-		// 		}
-		// 	}, 500);
-		// };
-
 		const handleOutsideClick = (e: MouseEvent) => {
 			if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
 				closeModal();
@@ -97,13 +85,11 @@ const GalleryModal = ({
 
 		document.addEventListener('keydown', handleKeyDown);
 		document.addEventListener('wheel', handleWheel);
-		// modalRef.current?.addEventListener('touchstart', handleTouch);
 		document.addEventListener('click', handleOutsideClick);
 
 		return () => {
 			document.removeEventListener('keydown', handleKeyDown);
 			document.removeEventListener('wheel', handleWheel);
-			// modalRef.current?.removeEventListener('touchstart', handleTouch);
 			document.removeEventListener('click', handleOutsideClick);
 		};
 	}, [closeModal, modalRef, next, prev]);
@@ -146,6 +132,7 @@ const GalleryModal = ({
 							<div className="h-full max-h-screen w-full shrink-0 overflow-hidden object-contain flex items-center justify-center">
 								<img
 									src={pictures[index]?.url}
+									key={pictures[index]?.url}
 									alt={`снимка ${index + 1} на проект`}
 									className=" object-contain h-full rounded-xl"
 								/>
