@@ -33,16 +33,16 @@ export const metadata = {
 		description:
 			'Тук може да откриете проектите на учениците на ТУЕС. Тази година над 120 проекта ще бъдат представени само на 23 април в София Тех Парк - форум Джон Атанасов.',
 		creator: '@tuesfest',
-		images: ['https://tuesfest.bg/logo/motto.png'],
+		images: ['https://2023.tuesfest.bg/logo/motto.png'],
 	},
-	assets: ['https://tuesfest.bg/favicon.png', 'https://tuesfest.bg/logo/motto.png', 'https://tuesfest.bg/assets'],
+	assets: ['https://2023.tuesfest.bg/favicon.png', 'https://2023.tuesfest.bg/logo/motto.png', 'https://2023.tuesfest.bg/assets'],
 	openGraph: {
 		title: 'Проекти | TUES Fest 2023',
 		description:
 			'Тук може да откриете проектите на учениците на ТУЕС. Тази година над 120 проекта ще бъдат представени само на 23 април в София Тех Парк - форум Джон Атанасов.',
-		url: `https://tuesfest.bg/projects`,
+		url: `https://2023.tuesfest.bg/projects`,
 		siteName: 'TUES Fest 2023',
-		images: ['https://tuesfest.bg/logo/motto.png'],
+		images: ['https://2023.tuesfest.bg/logo/motto.png'],
 		locale: 'bg-BG',
 		type: 'website',
 	},

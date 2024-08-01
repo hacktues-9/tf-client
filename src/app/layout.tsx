@@ -83,19 +83,19 @@ export const metadata = {
 		description:
 			'TUES Fest 2023 - ден на отворените врати на ТУЕС и изложение на ученически проекти. София Тех Парк - 23 април 2023.',
 		creator: '@tuesfest',
-		images: ['https://tuesfest.bg/logo/motto.png'],
+		images: ['https://2023.tuesfest.bg/logo/motto.png'],
 	},
 	archives: ['https://2022.tuesfest.bg'],
-	assets: ['https://tuesfest.bg/favicon.png', 'https://tuesfest.bg/logo/motto.png', 'https://tuesfest.bg/assets'],
+	assets: ['https://2023.tuesfest.bg/favicon.png', 'https://2023.tuesfest.bg/logo/motto.png', 'https://2023.tuesfest.bg/assets'],
 	openGraph: {
 		title: 'TUES Fest 2023',
 		description:
 			'TUES Fest 2023 - ден на отворените врати на ТУЕС и изложение на ученически проекти. София Тех Парк - 23 април 2023.',
-		url: 'https://tuesfest.bg',
+		url: 'https://2023.tuesfest.bg',
 		siteName: 'TUES Fest 2023',
 		images: [
 			{
-				url: 'https://tuesfest.bg/logo/motto.png',
+				url: 'https://2023.tuesfest.bg/logo/motto.png',
 			},
 		],
 		locale: 'bg-BG',

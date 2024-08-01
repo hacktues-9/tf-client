@@ -41,7 +41,7 @@ export type Project = {
 };
 
 const getProject = async (id: string) => {
-	const res = await fetch(`https://tuesfest.bg/data/project/${id}.json`);
+	const res = await fetch(`https://2023.tuesfest.bg/data/project/${id}.json`);
 
 	if (!res.ok) {
 		// This will activate the closest `error.js` Error Boundary
@@ -81,7 +81,7 @@ export async function generateMetadata({ params }: { params: { projectId: string
 		openGraph: {
 			title: `${project.name} | TUES Fest 2023`,
 			description: project.description,
-			url: `https://tuesfest.bg/projects/${project.id}`,
+			url: `https://2023.tuesfest.bg/projects/${project.id}`,
 			siteName: 'TUES Fest 2023',
 			images: images?.map((image) => ({
 				url: image.url,
