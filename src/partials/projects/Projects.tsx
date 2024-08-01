@@ -20,7 +20,7 @@ const getProjects = async (category: string): Promise<Project[]> => {
 
 	// load from static file in public directory
 
-	const url = `https://tuesfest.bg/data/projects${category === 'all' ? '' : '/' + category}.json`;
+	const url = `https://2023.tuesfest.bg/data/projects${category === 'all' ? '' : '/' + category}.json`;
 	console.warn(url);
 
 	const res = await fetch(url);

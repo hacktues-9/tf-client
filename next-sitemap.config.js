@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: process.env.SITE_URL || "https://tuesfest.bg",
+    siteUrl: process.env.SITE_URL || "https://2023.tuesfest.bg",
     generateRobotsTxt: true,
     sitemapSize: 7000,
     exclude: ['/iskren', '/api', '/api/*'],
